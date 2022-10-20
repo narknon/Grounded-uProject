@@ -1,0 +1,13 @@
+#include "AbilityData.h"
+
+FAbilityData::FAbilityData() {
+    this->Cooldown = 0.00f;
+    this->BeginCooldownConfig = (ECooldownBeginConfig)140698270272880;
+    this->SetBeginCooldown = 0.00f;
+    this->Priority = 0.00f;
+    this->AbilityTargetType = (EAbilityTargetType)140698270272880;
+    this->UseNearestScriptedTarget = false;
+    this->IgnoreCooldownInPreferedAbility = false;
+    this->AnimPreAttack = NULL;
+}
+

@@ -1,0 +1,23 @@
+#include "SMInstancerMeshID.h"
+
+FSMInstancerMeshID::FSMInstancerMeshID() {
+    this->Mesh = NULL;
+    this->bUseDefaultCollision = false;
+    this->MaxDrawDistance = 0.00f;
+    this->bOverrideLightMapRes = false;
+    this->OverriddenLightMapRes = 0.00f;
+    this->UseEmissiveForStaticLighting = false;
+    this->EmissiveBoost = 0.00f;
+    this->CastShadow = false;
+    this->LightmapType = (ELightmapType)140698270272880;
+    this->bOverrideLightmapType = false;
+    this->bCastFarShadow = false;
+    this->bHiddenShadow = false;
+    this->bVisible = false;
+    this->bActorHiddenInGame = false;
+    this->bNeverDistanceCull = false;
+    this->bAllowCullDistanceVolume = false;
+    this->bFillCollisionUnderneathForNavmesh = false;
+    this->Mobility = EComponentMobility::Static;
+}
+
