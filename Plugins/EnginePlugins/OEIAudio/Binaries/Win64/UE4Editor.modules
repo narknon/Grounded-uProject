@@ -1,0 +1,8 @@
+{
+	"BuildId": "17155196",
+	"Modules": 
+	{
+		"OEISplineEmitter": "UE4Editor-OEISplineEmitter.dll",
+		"OEIVoiceOver": "UE4Editor-OEIVoiceOver.dll"
+	}
+}

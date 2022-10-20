@@ -22,6 +22,7 @@ public class GameTelemetryVisualizer : ModuleRules
                 "GameTelemetry",
                 "AnalyticsVisualEditing",
                 "AppFramework",
+                "DeveloperSettings",
                 "Engine",
 				"Projects",
                 "Slate",

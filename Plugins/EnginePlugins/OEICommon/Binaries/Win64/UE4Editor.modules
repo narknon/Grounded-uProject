@@ -1,0 +1,13 @@
+{
+	"BuildId": "17155196",
+	"Modules": 
+	{
+		"OEIAchievements": "UE4Editor-OEIAchievements.dll",
+		"OEICommon": "UE4Editor-OEICommon.dll",
+		"OEICrashLogging": "UE4Editor-OEICrashLogging.dll",
+		"OEIGlobalVariables": "UE4Editor-OEIGlobalVariables.dll",
+		"OEIRest": "UE4Editor-OEIRest.dll",
+		"OEIScripting": "UE4Editor-OEIScripting.dll",
+		"OEIText": "UE4Editor-OEIText.dll"
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"BuildId": "17155196",
+	"Modules": 
+	{
+		"GameTelemetry": "UE4Editor-GameTelemetry.dll",
+		"GameTelemetryVisualizer": "UE4Editor-GameTelemetryVisualizer.dll"
+	}
+}
