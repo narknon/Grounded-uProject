@@ -2,10 +2,11 @@
 #include "CoreMinimal.h"
 #include "EJiraIssueType.generated.h"
 
-UENUM(BlueprintType)
-enum class EJiraIssueType : uint8 {
+UENUM(meta = (Bitflags, UseEnumValuesAsMaskValuesInEditor = "true"))
+enum class EJiraIssueType : uint32 {
     Bug = 0x1,
     Task = 0x29CD,
     Unknown = 0xFFFF,
 };
 
+ENUM_CLASS_FLAGS(EJiraIssueType);

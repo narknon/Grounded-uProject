@@ -49,6 +49,6 @@ UBurrowComponent::UBurrowComponent() {
     this->BurrowedTimeToStop = 0.00f;
     this->bDestroyAfterBurrowing = false;
     this->bCheckMaterialWhenBurrowing = true;
-    this->BurrowState = (EBurrowState)140698270272880;
+    this->BurrowState = EBurrowState::;
 }
 

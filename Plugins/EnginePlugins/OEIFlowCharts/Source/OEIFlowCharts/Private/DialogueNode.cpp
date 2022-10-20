@@ -4,9 +4,9 @@ FDialogueNode::FDialogueNode() {
     this->bNotSkippable = false;
     this->bIsQuestionNode = false;
     this->bHideSpeaker = false;
-    this->PlayType = (ENodePlayType)140698270272880;
-    this->Persistence = (EPersistenceType)140698270272880;
+    this->PlayType = ENodePlayType::;
+    this->Persistence = EPersistenceType::;
     this->NoPlayRandomWeight = 0.00f;
-    this->DisplayType = (ENodeDisplayType)140698270272880;
+    this->DisplayType = ENodeDisplayType::;
 }
 

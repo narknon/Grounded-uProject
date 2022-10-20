@@ -13,7 +13,7 @@ FAttackData::FAttackData() {
     this->Duration = 0.00f;
     this->SoundIntensity = 0.00f;
     this->SoundRange = 0.00f;
-    this->HitResolutionType = (EAttackHitType)140698270272880;
+    this->HitResolutionType = EAttackHitType::;
     this->bIsHostile = false;
     this->bFriendlyFire = false;
     this->bIgnoreOwner = false;
@@ -34,7 +34,7 @@ FAttackData::FAttackData() {
     this->bUseLegacyOffset = false;
     this->bUseOffsetAsRange = false;
     this->bSummonBossMobsPhase = false;
-    this->StatusEffectApplyType = (EAttackStatusEffectApplyType)140698270272880;
+    this->StatusEffectApplyType = EAttackStatusEffectApplyType::;
     this->AttackAnim = NULL;
 }
 

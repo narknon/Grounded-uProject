@@ -5,7 +5,7 @@ FGameplayTag UAttackAnimEffect::GetAttackSpeedTag() const {
 }
 
 UAttackAnimEffect::UAttackAnimEffect() {
-    this->AttackMotionType = (EHitMotionType)140698270272880;
+    this->AttackMotionType = EHitMotionType::;
     this->bHasHitStops = false;
     this->bHasReload = false;
     this->AnimPropClass = NULL;

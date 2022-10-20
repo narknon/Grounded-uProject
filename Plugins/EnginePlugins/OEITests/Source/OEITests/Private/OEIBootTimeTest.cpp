@@ -1,5 +1,6 @@
 #include "OEIBootTimeTest.h"
 
-UOEIBootTimeTest::UOEIBootTimeTest() {
+UOEIBootTimeTest::UOEIBootTimeTest() : Super(FObjectInitializer::Get())
+{
 }
 

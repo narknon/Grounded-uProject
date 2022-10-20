@@ -189,7 +189,7 @@ UHealthComponent::UHealthComponent() {
     this->BaseDamageReduction = 0.00f;
     this->ImmunityFlags = 0.00f;
     this->RequiredDamageTypeFlags = 0.00f;
-    this->FriendlyFireType = (EFriendlyFireType)140698270272880;
+    this->FriendlyFireType = EFriendlyFireType::;
     this->RequiredDamageTypeTier = 0;
     this->PlayDamagedParticlesOnDeath = true;
     this->bCanDieFromDamage = true;
@@ -210,9 +210,9 @@ UHealthComponent::UHealthComponent() {
     this->MaxHits = 0.00f;
     this->OverrideTargetTokens = 0;
     this->bShowDamageInteractUI = false;
-    this->HealthState = (EHealthState)140698270272880;
-    this->HealthStateOnLoad = (EHealthState)140698270272880;
-    this->IncapacitationSetting = (EIncapacitationSetting)140698270272880;
+    this->HealthState = EHealthState::;
+    this->HealthStateOnLoad = EHealthState::;
+    this->IncapacitationSetting = EIncapacitationSetting::;
     this->MaxHealth = 0.00f;
     this->CurrentDamage = 0.00f;
     this->ReviveHealthPercentage = 0.00f;

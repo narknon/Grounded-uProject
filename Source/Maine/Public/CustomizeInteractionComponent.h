@@ -1,13 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "CustomPropertiesWindowWidget.h"
+#include "CustomPropertyComponent.h"
 #include "Templates/SubclassOf.h"
 #include "Components/ActorComponent.h"
 #include "CustomizeInteractionComponent.generated.h"
 
-class UCustomPropertiesWindowWidget;
-class UCustomPropertyComponent;
-class ASurvivalPlayerCharacter;
-class AActor;
+
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class MAINE_API UCustomizeInteractionComponent : public UActorComponent {

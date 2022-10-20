@@ -3,7 +3,7 @@
 #include "Engine/DeveloperSettings.h"
 #include "OEIRestSettings.generated.h"
 
-UCLASS(Blueprintable, DefaultConfig)
+UCLASS(Blueprintable, DefaultConfig, Config = Engine)
 class OEIREST_API UOEIRestSettings : public UDeveloperSettings {
     GENERATED_BODY()
 public:

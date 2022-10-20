@@ -2,6 +2,6 @@
 
 FGoapActionVitalAdjustment::FGoapActionVitalAdjustment() {
     this->Value = 0.00f;
-    this->Visibility = (EVitalAdjustmentVisibility)140698270272880;
+    this->Visibility = EVitalAdjustmentVisibility::;
 }
 

@@ -96,7 +96,7 @@ void UHUDMarkerData::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLi
 }
 
 UHUDMarkerData::UHUDMarkerData() {
-    this->MarkerType = (EHUDMarkerType)140698270272880;
+    this->MarkerType = EHUDMarkerType::;
     this->MarkerListIndex = 255;
     this->MarkerTypeVariant = 0.00f;
     this->MarkerTypeColorVariant = 0.00f;

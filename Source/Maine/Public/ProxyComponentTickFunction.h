@@ -10,3 +10,11 @@ public:
     MAINE_API FProxyComponentTickFunction();
 };
 
+template<>
+struct TStructOpsTypeTraits<FProxyComponentTickFunction> : public TStructOpsTypeTraitsBase2<FProxyComponentTickFunction>
+{
+    enum
+    {
+        WithCopy = false
+    };
+};

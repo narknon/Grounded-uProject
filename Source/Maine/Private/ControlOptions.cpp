@@ -64,6 +64,6 @@ void UControlOptions::BindGame() {
 }
 
 UControlOptions::UControlOptions() {
-    this->ControlSet = (EControlSet)140698270272880;
+    this->ControlSet = EControlSet::;
 }
 

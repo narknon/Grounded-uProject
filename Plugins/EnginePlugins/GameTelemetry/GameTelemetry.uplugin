@@ -17,6 +17,11 @@
 	"Installed": false,
 	"Modules": [
 		{
+			"Name": "GameTelemetryVisualizer",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		},
+		{
 			"Name": "GameTelemetry",
 			"Type": "Runtime",
 			"LoadingPhase": "PreDefault"

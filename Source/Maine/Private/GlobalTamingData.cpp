@@ -1,10 +1,10 @@
 #include "GlobalTamingData.h"
 
-float UGlobalTamingData::HungerToHappiness(float Hunger) const {
+float UGlobalTamingData::HungerToHappiness(float Hunger) {
     return 0.0f;
 }
 
-float UGlobalTamingData::HappinessToHunger(float Happiness) const {
+float UGlobalTamingData::HappinessToHunger(float Happiness) {
     return 0.0f;
 }
 

@@ -3,7 +3,7 @@
 #include "Engine/PackageMapClient.h"
 #include "OEIPackageMapClient.generated.h"
 
-UCLASS(Blueprintable, DefaultConfig, NonTransient)
+UCLASS(Blueprintable, DefaultConfig, NonTransient, Config = Engine)
 class OEIONLINESUBSYSTEMUTILS_API UOEIPackageMapClient : public UPackageMapClient {
     GENERATED_BODY()
 public:

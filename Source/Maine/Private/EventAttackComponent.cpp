@@ -20,7 +20,7 @@ void UEventAttackComponent::ApplyEffects() {
 }
 
 UEventAttackComponent::UEventAttackComponent() {
-    this->DamageEventType = (EDamageEventComponentType)140698270272880;
+    this->DamageEventType = EDamageEventComponentType::;
     this->HealthToLoseForApplyingEffect = 0.00f;
 }
 

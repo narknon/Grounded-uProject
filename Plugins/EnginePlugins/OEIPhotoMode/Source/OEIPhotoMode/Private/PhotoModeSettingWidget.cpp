@@ -71,8 +71,8 @@ UPhotoModeSettingWidget::UPhotoModeSettingWidget() : UUserWidget(FObjectInitiali
     this->CheckBox = NULL;
     this->ComboBox = NULL;
     this->ValueText = NULL;
-    this->ControlledSetting = (EPhotoModeSetting)140698270272880;
-    this->ValueFormat = (EPhotoModeValueFormat)140698270272880;
+    this->ControlledSetting = EPhotoModeSetting::;
+    this->ValueFormat = EPhotoModeValueFormat::;
     this->MaximumIntegralDigits = 0.00f;
     this->MaximumFractionalDigits = 0.00f;
     this->PrePhotoModeShowHideState = false;

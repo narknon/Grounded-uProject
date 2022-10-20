@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "EJiraStatus.generated.h"
 
-UENUM(BlueprintType)
-enum class EJiraStatus : uint8 {
+UENUM(meta = (Bitflags, UseEnumValuesAsMaskValuesInEditor = "true"))
+enum class EJiraStatus : uint32 {
     NotStarted = 0x1,
     InProgress = 0x3,
     Reopened,
@@ -118,3 +118,4 @@ enum class EJiraStatus : uint8 {
     Unknown = 0xFFFF,
 };
 
+ENUM_CLASS_FLAGS(EJiraStatus);

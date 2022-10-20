@@ -6,7 +6,6 @@
 #include "ESurvivalDamageTypeFlags.h"
 #include "SurvivalDamageType.generated.h"
 
-class UObject;
 
 UCLASS(Blueprintable)
 class MAINE_API USurvivalDamageType : public UDamageType {

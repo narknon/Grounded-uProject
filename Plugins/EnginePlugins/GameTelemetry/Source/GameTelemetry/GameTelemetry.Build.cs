@@ -10,6 +10,7 @@ public class GameTelemetry : ModuleRules {
             "Core",
             "CoreUObject",
             "Engine",
+            "HTTP"
         });
     }
 }

@@ -353,7 +353,7 @@ ASurvivalPlayerState::ASurvivalPlayerState() {
     this->CurrentNightUITheme = NULL;
     this->ColorSelection = 0.00f;
     this->bBurgleQuestsStickied = true;
-    this->DesiredCameraMode = (ECameraDisplayMode)140698270272880;
+    this->DesiredCameraMode = ECameraDisplayMode::;
     this->PerkComponent = CreateDefaultSubobject<UPerkComponent>(TEXT("PerkComponent"));
     this->PlayerUpgradeComponent = CreateDefaultSubobject<UPlayerUpgradeComponent>(TEXT("PlayerUpgradeComponent"));
     this->bResourceSurveyVisible = true;

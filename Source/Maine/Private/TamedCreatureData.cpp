@@ -38,6 +38,6 @@ UTamedCreatureData::UTamedCreatureData() {
     this->HourTamed = 0.00f;
     this->TimesPetted = 0.00f;
     this->RawHappinessValue = 0.00f;
-    this->TameState = (ETamedState)140698270272880;
+    this->TameState = ETamedState::;
 }
 

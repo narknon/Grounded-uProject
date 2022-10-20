@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GoapAction.h"
 #include "GoapActionOwner.h"
 #include "GoapActionInstance.generated.h"
 
-class UGoapAction;
 
 USTRUCT(BlueprintType)
 struct FGoapActionInstance {

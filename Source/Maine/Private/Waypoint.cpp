@@ -7,7 +7,7 @@ void AWaypoint::SetNextWaypoint(AWaypoint* InWaypoint) {
 }
 
 AWaypoint::AWaypoint() {
-    this->WaypointType = (EWaypointType)140698270272880;
+    this->WaypointType = EWaypointType::;
     this->NextWaypoint = NULL;
     this->Duration = 0.00f;
     this->EmergeVariation = 0.00f;

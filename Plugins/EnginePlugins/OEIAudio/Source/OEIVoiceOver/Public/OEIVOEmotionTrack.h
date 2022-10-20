@@ -1,7 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Compilation/IMovieSceneTrackTemplateProducer.h"
 #include "MovieSceneNameableTrack.h"
+#include "Compilation/IMovieSceneTrackTemplateProducer.h"
+
 #include "OEIVOEmotionTrack.generated.h"
 
 class UMovieSceneSection;

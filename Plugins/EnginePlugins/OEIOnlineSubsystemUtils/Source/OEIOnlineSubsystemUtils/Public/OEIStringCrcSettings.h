@@ -3,7 +3,7 @@
 #include "Engine/DeveloperSettings.h"
 #include "OEIStringCrcSettings.generated.h"
 
-UCLASS(Blueprintable, DefaultConfig)
+UCLASS(Blueprintable, DefaultConfig, Config = Engine)
 class OEIONLINESUBSYSTEMUTILS_API UOEIStringCrcSettings : public UDeveloperSettings {
     GENERATED_BODY()
 public:

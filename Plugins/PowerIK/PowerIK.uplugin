@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
 	"Version": 0,
-	"VersionName": "1.56",
+	"VersionName": "1.60",
 	"FriendlyName": "Power IK",
 	"Description": "A full-body IK solver.",
 	"Category": "Animation",
@@ -10,21 +10,26 @@
 	"DocsURL": "https://poweranimated.github.io/",
 	"MarketplaceURL": "https://www.unrealengine.com/marketplace/en-US/product/power-ik",
 	"SupportURL": "support@poweranimated.com",
+	"EngineVersion": "4.26.0",
 	"CanContainContent": true,
-	"IsBetaVersion": false,
-	"IsExperimentalVersion": false,
 	"Installed": true,
 	"Modules": [
+		{
+			"Name": "PowerIKTool",
+			"Type": "UncookedOnly",
+			"LoadingPhase": "PreDefault",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Linux"
+			]
+		},
 		{
 			"Name": "PowerIKRuntime",
 			"Type": "Runtime",
 			"LoadingPhase": "PreDefault",
 			"WhitelistPlatforms": [
 				"Win64",
-				"Linux",
-				"WinGDK",
-				"XboxOneGDK",
-				"XSX"
+				"Linux"
 			]
 		}
 	],
@@ -34,10 +39,7 @@
 			"Enabled": true,
 			"WhitelistPlatforms": [
 				"Win64",
-				"Linux",
-				"WinGDK",
-				"XboxOneGDK",
-				"XSX"
+				"Linux"
 			]
 		}
 	]

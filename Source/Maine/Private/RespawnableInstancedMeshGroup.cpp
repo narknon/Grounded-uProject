@@ -34,7 +34,7 @@ void ARespawnableInstancedMeshGroup::BuildInstances_Implementation() {
 
 ARespawnableInstancedMeshGroup::ARespawnableInstancedMeshGroup() {
     this->ItemSpawnGroupData = NULL;
-    this->PlacementType = (ERespawnableMeshPlacementType)140698270272880;
+    this->PlacementType = ERespawnableMeshPlacementType::;
     this->InstancedMeshComponent = CreateDefaultSubobject<UHierarchicalInstancedStaticMeshComponent>(TEXT("InstancedStaticMeshComponent"));
     this->ObsidianIDComponent = CreateDefaultSubobject<UObsidianIDComponent>(TEXT("ObsidianIDComponent"));
     this->PersistenceComponent = CreateDefaultSubobject<UPersistenceComponent>(TEXT("PersistenceComponent"));

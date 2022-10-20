@@ -1,7 +1,7 @@
 #include "PlayerIdentityStruct.h"
 
 FPlayerIdentityStruct::FPlayerIdentityStruct() {
-    this->Identity = (EPlayerCharacterIdentity)140698270272880;
+    this->Identity = EPlayerCharacterIdentity::;
     this->ProgressBar = NULL;
 }
 

@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "",
+	"EngineAssociation": "4.27",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -64,10 +64,6 @@
 		},
 		{
 			"Name": "OnlineSubsystemPlayFab",
-			"Enabled": true
-		},
-		{
-			"Name": "AnalyticsPlayFab",
 			"Enabled": true
 		},
 		{
@@ -342,40 +338,25 @@
 			"Name": "OpenXRHandTracking",
 			"Enabled": false,
 			"SupportedTargetPlatforms": [
-				"Win32",
-				"Win64",
-				"Linux",
-				"HoloLens",
-				"Android"
+				"Win64"
 			]
 		},
 		{
 			"Name": "OpenXREyeTracker",
 			"Enabled": false,
 			"SupportedTargetPlatforms": [
-				"Win32",
-				"Win64",
-				"Linux",
-				"HoloLens",
-				"Android"
+				"Win64"
 			]
 		},
 		{
 			"Name": "OpenXR",
 			"Enabled": false,
 			"SupportedTargetPlatforms": [
-				"Win32",
-				"Win64",
-				"Linux",
-				"Android",
-				"HoloLens"
+				"Win64"
 			]
 		}
 	],
 	"TargetPlatforms": [
-		"WinGDK",
-		"XboxOneGDK",
-		"XSX",
-		"GDK"
+		"Win64"
 	]
 }

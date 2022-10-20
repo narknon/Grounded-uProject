@@ -16,6 +16,6 @@ void UHUDCrosshairWidget::OnAttackResolutionChanged(EAttackResolutionType Attack
 }
 
 UHUDCrosshairWidget::UHUDCrosshairWidget() {
-    this->MostRecentAttackOutcome = (EAttackResolutionType)140698270272880;
+    this->MostRecentAttackOutcome = EAttackResolutionType::;
 }
 

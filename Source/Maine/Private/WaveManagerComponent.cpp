@@ -119,7 +119,7 @@ UWaveManagerComponent::UWaveManagerComponent() {
     this->PlayerDeathWaveDamage = 0.00f;
     this->UnderAttackChatterDelay = 0.00f;
     this->ActiveWave = NULL;
-    this->AttackState = (EWaveAttackState)140698270272880;
+    this->AttackState = EWaveAttackState::;
     this->ActiveWaveInitialSpawnCount = 0.00f;
     this->ActiveWaveRemainingSpawnCount = 0.00f;
     this->bWaveActive = false;

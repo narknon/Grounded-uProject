@@ -1,5 +1,0 @@
-#include "ServerGetPlayFabIDsFromFacebookInstantGamesIdsRequest.h"
-
-FServerGetPlayFabIDsFromFacebookInstantGamesIdsRequest::FServerGetPlayFabIDsFromFacebookInstantGamesIdsRequest() {
-}
-

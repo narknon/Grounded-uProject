@@ -37,6 +37,6 @@ void AFabricator::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifet
 AFabricator::AFabricator() {
     this->ProcessingTime = 0.00f;
     this->OperableHealthThreshold = 0.00f;
-    this->FabricationState = (EFabricationState)140698270272880;
+    this->FabricationState = EFabricationState::;
 }
 

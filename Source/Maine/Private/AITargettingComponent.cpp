@@ -26,8 +26,8 @@ UAITargettingComponent::UAITargettingComponent() {
     this->DamageThreatModifier = 0.00f;
     this->HearingThreatModifier = 0.00f;
     this->TargetDistanceModifier = 0.00f;
-    this->BuildingTargetType = (EBuildingTargettingType)140698270272880;
-    this->TargetPriorityType = (ETargetPriorityType)140698270272880;
+    this->BuildingTargetType = EBuildingTargettingType::;
+    this->TargetPriorityType = ETargetPriorityType::;
     this->bTargetsCanExpire = true;
     this->UseRandomTarget = false;
     this->RandomTargetModeSelectInterval = 0.00f;

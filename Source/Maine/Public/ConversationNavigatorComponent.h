@@ -1,8 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
-#include "OnConversationNodeShowDelegate.h"
-#include "UObject/NoExportTypes.h"
+
 #include "LocString.h"
 #include "OnConversationNodeHideDelegate.h"
 #include "EConversationPlayPriority.h"
@@ -12,10 +10,11 @@
 #include "BitArrayWrapper.h"
 #include "ConversationPlayData.h"
 #include "ActiveConversationData.h"
+#include "OnConversationNodeShowDelegate.h"
+#include "SurvivalCharacter.h"
+#include "Components/ActorComponent.h"
 #include "ConversationNavigatorComponent.generated.h"
 
-class AActor;
-class ASurvivalCharacter;
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class MAINE_API UConversationNavigatorComponent : public UActorComponent {
@@ -52,7 +51,7 @@ private:
     
 public:
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void ServerStartConversation(AActor* OwnerActor, const FGuid& ConversationId, int32 NodeId, EConversationPlayPriority Priority, TEnumAsByte<EConversationNodeDisplayStyle> DisplayStyle);
+    void ServerStartConversation(AActor* OwnerActor, const FGuid& ConversationId, int32 NodeId, EConversationPlayPriority Priority, EConversationNodeDisplayStyle DisplayStyle);
     
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
     void ServerSelectPlayerResponse(AActor* Owner, int32 ResponseNodeID);
@@ -77,11 +76,11 @@ private:
     void RemovePlayerDrivenConversation(AActor* Owner);
     
     UFUNCTION()
-    void QueueConversation(AActor* OwnerActor, const FGuid& ConversationId, int32 NodeId, EConversationPlayPriority Priority, TEnumAsByte<EConversationNodeDisplayStyle> DisplayStyle);
+    void QueueConversation(AActor* OwnerActor, const FGuid& ConversationId, int32 NodeId, EConversationPlayPriority Priority, EConversationNodeDisplayStyle DisplayStyle);
     
 public:
     UFUNCTION(NetMulticast, Reliable)
-    void MulticastStartConversation(FGuid ConversationId, TEnumAsByte<EConversationNodeDisplayStyle> DisplayStyle);
+    void MulticastStartConversation(FGuid ConversationId, EConversationNodeDisplayStyle DisplayStyle);
     
     UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
     void MulticastPlayChatterNode(ASurvivalCharacter* OwnerActor, int32 NodeId);
@@ -90,14 +89,14 @@ public:
     void MulticastEndConversation(const FGuid& ConversationId);
     
     UFUNCTION(NetMulticast, Reliable)
-    void MulticastAdvanceConversation(AActor* OwnerActor, const FLocString& PlayerResponseLocString, const FGuid& ConversationId, int32 NodeId, const FBitArrayWrapper& ReadNodes, const TArray<int32>& ValidPlayerResponseNodeIds, TEnumAsByte<EConversationNodeDisplayStyle> DisplayStyle);
+    void MulticastAdvanceConversation(AActor* OwnerActor, const FLocString& PlayerResponseLocString, const FGuid& ConversationId, int32 NodeId, const FBitArrayWrapper& ReadNodes, const TArray<int32>& ValidPlayerResponseNodeIds, EConversationNodeDisplayStyle DisplayStyle);
     
     UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
     void MulticastAbortChatter();
     
 private:
     UFUNCTION()
-    bool IsPlayerDrivenNode(TEnumAsByte<EConversationNodeDisplayStyle> DisplayStyle, FGuid ConversationNavigatorID);
+    bool IsPlayerDrivenNode(EConversationNodeDisplayStyle DisplayStyle, FGuid ConversationNavigatorID);
     
 public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
@@ -105,7 +104,7 @@ public:
     
 private:
     UFUNCTION()
-    bool IsPlayerDrivenConversation(TEnumAsByte<EConversationNodeDisplayStyle> DisplayStyle);
+    bool IsPlayerDrivenConversation(EConversationNodeDisplayStyle DisplayStyle);
     
 public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
@@ -125,10 +124,10 @@ private:
     void EndConversation(const FGuid& ConversationId, bool bViaStartNewConversation);
     
     UFUNCTION()
-    void AdvanceConversationAndUpdateReadNodes(AActor* OwnerActor, FLocString PlayerResponse, const FGuid& ConversationId, int32 NodeId, TEnumAsByte<EConversationNodeDisplayStyle> DisplayStyle);
+    void AdvanceConversationAndUpdateReadNodes(AActor* OwnerActor, FLocString PlayerResponse, const FGuid& ConversationId, int32 NodeId, EConversationNodeDisplayStyle DisplayStyle);
     
     UFUNCTION()
-    void AdvanceConversation(AActor* OwnerActor, const FLocString& PlayerResponseLocString, const FGuid& ConversationId, int32 NodeId, TEnumAsByte<EConversationNodeDisplayStyle> DisplayStyle);
+    void AdvanceConversation(AActor* OwnerActor, const FLocString& PlayerResponseLocString, const FGuid& ConversationId, int32 NodeId, EConversationNodeDisplayStyle DisplayStyle);
     
     UFUNCTION(BlueprintCallable)
     void AddPlayerDrivenConversation(const FActiveConversationData& Convo);

@@ -3,6 +3,6 @@
 FOEISubtitleEntry::FOEISubtitleEntry() {
     this->UseConversationTable = false;
     this->SubtitleStringID = 0.00f;
-    this->Gender = (EOEIGender)140698270272880;
+    this->Gender = EOEIGender::;
 }
 

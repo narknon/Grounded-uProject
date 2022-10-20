@@ -61,6 +61,6 @@ UStatusEffect::UStatusEffect() {
     this->TimeElapsed = 0.00f;
     this->bEnabled = true;
     this->ResetTime = 0.00f;
-    this->OriginType = (EStatusEffectOriginType)140698270272880;
+    this->OriginType = EStatusEffectOriginType::;
 }
 

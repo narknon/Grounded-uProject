@@ -24,7 +24,7 @@ void UHotBarQuickSlot::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& Out
 }
 
 UHotBarQuickSlot::UHotBarQuickSlot() {
-    this->QuickSlotType = (EHotBarQuickSlotType)140698270272880;
+    this->QuickSlotType = EHotBarQuickSlotType::;
     this->CurrentItem = NULL;
 }
 

@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "EJiraResolution.generated.h"
 
-UENUM(BlueprintType)
-enum class EJiraResolution : uint8 {
+UENUM(meta = (Bitflags, UseEnumValuesAsMaskValuesInEditor = "true"))
+enum class EJiraResolution : uint32 {
     Fixed = 0x1,
     WontFix,
     Duplicate,
@@ -24,3 +24,4 @@ enum class EJiraResolution : uint8 {
     Unknown = 0xFFFF,
 };
 
+ENUM_CLASS_FLAGS(EJiraResolution);

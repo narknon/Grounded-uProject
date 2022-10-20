@@ -1,7 +1,16 @@
-#include "PlayFabRuntimeSettings.h"
+//////////////////////////////////////////////////////
+// Copyright (C) Microsoft. 2018. All rights reserved.
+//////////////////////////////////////////////////////
 
-UPlayFabRuntimeSettings::UPlayFabRuntimeSettings() {
-    this->ProductionEnvironmentURL = TEXT(".playfabapi.com");
-    this->TitleId = TEXT("DB8C6");
+
+#include "PlayFabCommon/Public/PlayFabRuntimeSettings.h"
+
+//////////////////////////////////////////////////////////////////////////
+// UPlayFabRuntimeSettings
+
+UPlayFabRuntimeSettings::UPlayFabRuntimeSettings()
+    : ProductionEnvironmentURL(TEXT(".playfabapi.com"))
+    , TitleId()
+    , DeveloperSecretKey()
+{
 }
-

@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Engine/NavigationObjectBase.h"
+
 #include "PlayerStartFallback.generated.h"
 
 UCLASS(Blueprintable)

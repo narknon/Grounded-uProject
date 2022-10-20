@@ -31,7 +31,7 @@ public:
     bool IsLockingAnim() const;
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-    TEnumAsByte<EInteractionState> IsInteractionEnabled(EInteractionChannel Channel, const AActor* InstigatedBy) const;
+    EInteractionState IsInteractionEnabled(EInteractionChannel Channel, const AActor* InstigatedBy) const;
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void Interact(EInteractionChannel Channel, AActor* InstigatedBy);

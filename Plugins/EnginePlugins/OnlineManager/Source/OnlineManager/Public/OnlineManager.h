@@ -3,7 +3,7 @@
 #include "Subsystems/GameInstanceSubsystem.h"
 #include "OnlineManager.generated.h"
 
-UCLASS(Blueprintable, DefaultConfig)
+UCLASS(Blueprintable, DefaultConfig, Config = Engine)
 class ONLINEMANAGER_API UOnlineManager : public UGameInstanceSubsystem {
     GENERATED_BODY()
 public:

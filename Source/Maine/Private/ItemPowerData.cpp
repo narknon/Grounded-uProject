@@ -7,6 +7,6 @@ FItemPowerData::FItemPowerData() {
     this->bCanBeUsedInWater = false;
     this->TotalPowerTimeInHours = 0.00f;
     this->TotalCharges = 0.00f;
-    this->ChargingAnimType = (EInteractAnimType)140698270272880;
+    this->ChargingAnimType = EInteractAnimType::;
 }
 

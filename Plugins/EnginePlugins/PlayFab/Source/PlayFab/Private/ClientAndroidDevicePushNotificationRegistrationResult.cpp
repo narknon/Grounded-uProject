@@ -1,5 +1,0 @@
-#include "ClientAndroidDevicePushNotificationRegistrationResult.h"
-
-FClientAndroidDevicePushNotificationRegistrationResult::FClientAndroidDevicePushNotificationRegistrationResult() {
-}
-

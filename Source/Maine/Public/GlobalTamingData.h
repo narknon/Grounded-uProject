@@ -20,10 +20,10 @@ public:
     
     UGlobalTamingData();
     UFUNCTION(BlueprintCallable, BlueprintPure)
-    static float HungerToHappiness(float Hunger) const;
+    static float HungerToHappiness(float Hunger);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
-    static float HappinessToHunger(float Happiness) const;
+    static float HappinessToHunger(float Happiness);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     int32 GetHappinessStepIndexFromHunger(float Hunger) const;

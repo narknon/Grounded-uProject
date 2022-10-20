@@ -64,6 +64,6 @@ ASurvivalCreature::ASurvivalCreature() {
     this->PlayerPettingAnimDead = NULL;
     this->OptimalPettingDistance = 0.00f;
     this->DrownTimer = 0.00f;
-    this->WaveWeightClass = (EWaveCreatureWeightClass)140698270272880;
+    this->WaveWeightClass = EWaveCreatureWeightClass::;
 }
 

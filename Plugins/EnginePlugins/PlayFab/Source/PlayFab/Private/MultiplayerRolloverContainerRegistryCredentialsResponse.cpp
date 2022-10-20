@@ -1,5 +1,0 @@
-#include "MultiplayerRolloverContainerRegistryCredentialsResponse.h"
-
-FMultiplayerRolloverContainerRegistryCredentialsResponse::FMultiplayerRolloverContainerRegistryCredentialsResponse() {
-}
-

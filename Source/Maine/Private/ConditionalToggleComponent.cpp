@@ -26,7 +26,7 @@ UConditionalToggleComponent::UConditionalToggleComponent() {
     this->bEnabled = false;
     this->StartHour = 0.00f;
     this->EndHour = 0.00f;
-    this->ConditionalLogic = (ELogicalOperator)140698270272880;
+    this->ConditionalLogic = ELogicalOperator::;
     this->bToggleVisibility = false;
     this->bToggleCollision = false;
     this->DefaultCollisionType = ECollisionEnabled::NoCollision;

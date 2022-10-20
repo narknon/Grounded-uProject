@@ -1,8 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "BuildingGridKey.h"
-#include "LiteBuildingGridSlotData.h"
 #include "LiteBuilding.h"
+#include "LiteBuildingGridSlotData.h"
+
 #include "LiteBuildingGrid.generated.h"
 
 USTRUCT(BlueprintType)
@@ -16,7 +17,7 @@ private:
     UPROPERTY(EditAnywhere, Transient)
     TMap<uint32, FLiteBuilding> Buildings;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TSet<uint32> RemovedBuildings;
     
 public:

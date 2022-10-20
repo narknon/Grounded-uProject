@@ -10,3 +10,12 @@ public:
     MAINE_API FActorCustomTickFunction();
 };
 
+
+template<>
+struct TStructOpsTypeTraits<FActorCustomTickFunction> : public TStructOpsTypeTraitsBase2<FActorCustomTickFunction>
+{
+    enum
+    {
+        WithCopy = false
+    };
+};

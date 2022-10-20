@@ -5,7 +5,7 @@ USurvivalCharacterLiteData::USurvivalCharacterLiteData() {
     this->bShouldActorLOD = false;
     this->MaxFullActorDistance = 0.00f;
     this->AverageDamage = 0.00f;
-    this->WaveWeightClass = (EWaveCreatureWeightClass)140698270272880;
+    this->WaveWeightClass = EWaveCreatureWeightClass::;
     this->DefaultHalfHeight = 0.00f;
     this->MaxSwimSpeed = 0.00f;
     this->MaxFlySpeed = 0.00f;
@@ -20,7 +20,7 @@ USurvivalCharacterLiteData::USurvivalCharacterLiteData() {
     this->bIsStationary = false;
     this->TetherRange = 0.00f;
     this->WanderRange = 0.00f;
-    this->DefaultBehaviorType = (EDefaultBehaviorType)140698270272880;
+    this->DefaultBehaviorType = EDefaultBehaviorType::;
     this->ExploreMinAltitude = 0.00f;
     this->ExploreMaxAltitude = 0.00f;
     this->bHasInterestComponent = false;

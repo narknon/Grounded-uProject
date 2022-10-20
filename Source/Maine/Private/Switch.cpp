@@ -28,7 +28,7 @@ void ASwitch::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeP
 }
 
 ASwitch::ASwitch() {
-    this->SwitchMode = (ESwitchMode)140698270272880;
+    this->SwitchMode = ESwitchMode::;
     this->NumUsesRemaining = 0.00f;
     this->OCLComponent = CreateDefaultSubobject<UOCLComponent>(TEXT("OCLComponent"));
     this->PersistenceComponent = CreateDefaultSubobject<UPersistenceComponent>(TEXT("PersistenceComponent"));

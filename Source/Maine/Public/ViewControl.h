@@ -19,7 +19,7 @@ public:
     void UpdateCamera(float DeltaTime);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-    void SetCameraView(UObject* ViewProvider, float BlendTime, TEnumAsByte<EViewTargetBlendFunction> BlendFunc, float BlendExp, bool bLockOutgoing, bool bUsePawnLook);
+    void SetCameraView(UObject* ViewProvider, float BlendTime, EViewTargetBlendFunction BlendFunc, float BlendExp, bool bLockOutgoing, bool bUsePawnLook);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void SetCamera(UCameraComponent* InCamera);

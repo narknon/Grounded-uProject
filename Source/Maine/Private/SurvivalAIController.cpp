@@ -225,7 +225,7 @@ ASurvivalAIController::ASurvivalAIController() {
     this->TargetClass = NULL;
     this->ExploreMinAltitude = 0.00f;
     this->ExploreMaxAltitude = 0.00f;
-    this->DefaultBehaviorType = (EDefaultBehaviorType)140698270272880;
+    this->DefaultBehaviorType = EDefaultBehaviorType::;
     this->AICharacter = NULL;
     this->AICreature = NULL;
     this->AISwimmingCharacter = NULL;

@@ -1,7 +1,7 @@
 #include "EquipmentSlotHiddenPrePhotoModeData.h"
 
 FEquipmentSlotHiddenPrePhotoModeData::FEquipmentSlotHiddenPrePhotoModeData() {
-    this->Slot = (EEquipmentSlot)140698270272880;
+    this->Slot = EEquipmentSlot::;
     this->WasHidden = false;
 }
 

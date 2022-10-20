@@ -1,6 +1,6 @@
 #include "EnvQueryTest_PartyDistance.h"
 
 UEnvQueryTest_PartyDistance::UEnvQueryTest_PartyDistance() {
-    this->TestMode = (EPartyDistanceType)140698270272880;
+    this->TestMode = EPartyDistanceType::;
 }
 

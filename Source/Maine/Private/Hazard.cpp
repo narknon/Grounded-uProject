@@ -58,11 +58,11 @@ AHazard::AHazard() {
     this->TickInterval = 0.00f;
     this->Lifetime = 0.00f;
     this->bTickForDamage = true;
-    this->DamageStyle = (EInflictDamageStyle)140698270272880;
+    this->DamageStyle = EInflictDamageStyle::;
     this->bHazardEnded = false;
     this->bHazardEnabled = true;
     this->FailsafeDestroyTime = 0.00f;
-    this->StatusEffectApplyType = (EHazardEffectApplyType)140698270272880;
+    this->StatusEffectApplyType = EHazardEffectApplyType::;
     this->ScreenEffect = NULL;
     this->ProjectileOwner = NULL;
     this->ProjectileAttack = NULL;

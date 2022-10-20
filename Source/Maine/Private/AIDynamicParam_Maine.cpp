@@ -1,7 +1,7 @@
 #include "AIDynamicParam_Maine.h"
 
 FAIDynamicParam_Maine::FAIDynamicParam_Maine() {
-    this->ParamType = (EAIParamType)140698270272880;
+    this->ParamType = EAIParamType::;
     this->Value = 0.00f;
 }
 

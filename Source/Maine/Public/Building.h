@@ -708,7 +708,7 @@ public:
     
 protected:
     UFUNCTION(BlueprintNativeEvent, BlueprintPure)
-    TEnumAsByte<EInteractionState> CanUse(EInteractionChannel Channel, const AActor* InstigatedBy) const;
+    EInteractionState CanUse(EInteractionChannel Channel, const AActor* InstigatedBy) const;
     
 public:
     UFUNCTION(BlueprintCallable)

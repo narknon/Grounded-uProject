@@ -1,11 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "BaseLODActor.h"
+#include "ProxyComponent.h"
+#include "Components/ActorComponent.h"
 #include "UObject/Object.h"
 #include "BaseLODComponent.generated.h"
 
-class UBaseLODActor;
-class UActorComponent;
-class UProxyComponent;
+
 
 UCLASS(Blueprintable)
 class MAINE_API UBaseLODComponent : public UObject {

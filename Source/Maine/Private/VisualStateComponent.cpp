@@ -50,7 +50,7 @@ UVisualStateComponent::UVisualStateComponent() {
     this->bDamageStateEffects = false;
     this->MaterialToggleHealthRatio = 0.00f;
     this->DamageMaxLODLevel = 0.00f;
-    this->HealthState = (EHealthVisualState)140698270272880;
+    this->HealthState = EHealthVisualState::;
     this->HealthComponent = NULL;
     this->MeshComponent = NULL;
 }

@@ -1,15 +1,43 @@
-using UnrealBuildTool;
+//////////////////////////////////////////////////////
+// Copyright (C) Microsoft. 2018. All rights reserved.
+//////////////////////////////////////////////////////
 
-public class PlayFabCommon : ModuleRules {
-    public PlayFabCommon(ReadOnlyTargetRules Target) : base(Target) {
+using UnrealBuildTool;
+using System.IO; 
+
+public class PlayFabCommon : ModuleRules
+{
+    public PlayFabCommon(ReadOnlyTargetRules Target) : base(Target)
+    {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-        bLegacyPublicIncludePaths = false;
-        ShadowVariableWarningLevel = WarningLevel.Warning;
-        
-        PublicDependencyModuleNames.AddRange(new string[] {
-            "Core",
-            "CoreUObject",
-            "Engine",
-        });
+
+        PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "Public"));
+
+        PrivateIncludePaths.Add(Path.Combine(ModuleDirectory, "Private"));
+
+        PublicDependencyModuleNames.AddRange(
+            new string[]
+            {
+                "Core",
+                "CoreUObject",
+                "Engine",
+                "HTTP",
+                "Json",
+                "JsonUtilities",
+            }
+        );
+
+        if (Target.bBuildEditor == true)
+        {
+            PrivateDependencyModuleNames.AddRange(new string[] {
+                "Settings"
+            });
+        }
+
+        BuildVersion Version;
+        BuildVersion.TryRead(BuildVersion.GetDefaultFileName(), out Version);
+        PublicDefinitions.Add(string.Format("ENGINE_MAJOR_VERSION={0}", Version.MajorVersion));
+        PublicDefinitions.Add(string.Format("ENGINE_MINOR_VERSION={0}", Version.MinorVersion));
+
     }
 }

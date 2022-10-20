@@ -1,7 +1,7 @@
 #include "ArmorEquipmentSlot.h"
 
 FArmorEquipmentSlot::FArmorEquipmentSlot() {
-    this->EquipmentSlot = (EEquipmentSlot)140698270272880;
+    this->EquipmentSlot = EEquipmentSlot::;
     this->DurabilityRatio = 0.00f;
 }
 

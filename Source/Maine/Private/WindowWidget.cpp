@@ -30,7 +30,7 @@ UWindowWidget::UWindowWidget() {
     this->bLimitsFramerate = false;
     this->bHidesHUD = true;
     this->bShowsCursor = true;
-    this->PauseBehavior = (EWindowPauseBehavior)140698270272880;
+    this->PauseBehavior = EWindowPauseBehavior::;
     this->bIsPopUpWindow = false;
     this->bIsFullscreenWindow = false;
     this->bGarbageCollectOnClose = true;
@@ -39,6 +39,6 @@ UWindowWidget::UWindowWidget() {
     this->bShowPlayerIsBusy = true;
     this->bRefreshOnOwnerInventoryChange = false;
     this->bResetOnOwnerInventoryChange = false;
-    this->InputMode = (EWindowInputMode)140698270272880;
+    this->InputMode = EWindowInputMode::;
 }
 

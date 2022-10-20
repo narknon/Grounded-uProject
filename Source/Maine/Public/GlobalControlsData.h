@@ -1,11 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AxisDirectionKey.h"
-#include "Engine/DataAsset.h"
-#include "ControlMetadata.h"
-#include "EControlConflictContext.h"
-#include "ControlConflictContextMetadata.h"
 #include "AnyControlMappingKey.h"
+#include "AxisDirectionKey.h"
+#include "ControlConflictContextMetadata.h"
+#include "ControlMetadata.h"
+#include "Engine/DataAsset.h"
+
+
 #include "GlobalControlsData.generated.h"
 
 UCLASS(Blueprintable, Const)

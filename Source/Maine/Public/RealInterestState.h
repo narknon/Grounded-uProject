@@ -1,7 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VitalState.h"
 #include "GoapActionInstance.h"
+#include "VitalState.h"
+
+
 #include "RealInterestState.generated.h"
 
 USTRUCT(BlueprintType)

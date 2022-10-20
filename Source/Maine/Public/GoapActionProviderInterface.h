@@ -1,11 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Interface.h"
+#include "GoapAction.h"
+#include "SurvivalGameInstance.h"
+
 #include "GoapActionProviderInterface.generated.h"
 
-class UObject;
-class UGoapAction;
-class USurvivalGameInstance;
 
 UINTERFACE(Blueprintable, MinimalAPI)
 class UGoapActionProviderInterface : public UInterface {

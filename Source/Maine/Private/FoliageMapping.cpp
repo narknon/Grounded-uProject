@@ -2,9 +2,9 @@
 
 FFoliageMapping::FFoliageMapping() {
     this->FoliageBlueprintClass = NULL;
-    this->DefaultState = (EFoliageInstanceState)140698270272880;
+    this->DefaultState = EFoliageInstanceState::;
     this->CanAttackToSwap = false;
-    this->DisplaceLevel = (EFoliageSwapLevel)140698270272880;
+    this->DisplaceLevel = EFoliageSwapLevel::;
     this->PlayerSwapDistance = 0.00f;
     this->DisplaceAudioLoop = NULL;
     this->DisplaceAudioAttenuation = NULL;

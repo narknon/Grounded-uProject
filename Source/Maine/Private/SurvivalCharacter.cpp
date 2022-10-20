@@ -243,9 +243,9 @@ void ASurvivalCharacter::MulticastStopAnimMontage_Implementation(UAnimMontage* A
 void ASurvivalCharacter::MulticastStartCaptureReaction_Implementation(UAnimMontage* AnimMontage, bool bLockCharacter) {
 }
 
-void ASurvivalCharacter::MulticastSetPawnCollision_Implementation(TEnumAsByte<ECollisionResponse> CollisionResponse) {
+void ASurvivalCharacter::MulticastSetPawnCollision_Implementation(ECollisionResponse CollisionResponse) {
 }
-bool ASurvivalCharacter::MulticastSetPawnCollision_Validate(TEnumAsByte<ECollisionResponse> CollisionResponse) {
+bool ASurvivalCharacter::MulticastSetPawnCollision_Validate(ECollisionResponse CollisionResponse) {
     return true;
 }
 
@@ -539,13 +539,13 @@ ASurvivalCharacter::ASurvivalCharacter() {
     this->AttackHandlerComponent = CreateDefaultSubobject<UAttackHandlerComponent>(TEXT("AttackHandlerComponent"));
     this->AttackInputBufferTime = 0.00f;
     this->DefaultAttackTier = 0.00f;
-    this->AlternateAttackFunction = (EAlternateAttackFunction)140698270272880;
-    this->PlayerDisplayMode = (ECameraDisplayMode)140698270272880;
+    this->AlternateAttackFunction = EAlternateAttackFunction::;
+    this->PlayerDisplayMode = ECameraDisplayMode::;
     this->OverrideViewTarget = NULL;
     this->VoiceOverAudioComponent = CreateDefaultSubobject<UAudioComponent>(TEXT("VoiceOverAudioComponent"));
-    this->ExpectedCameraViewPoint = (ECameraDisplayMode)140698270272880;
+    this->ExpectedCameraViewPoint = ECameraDisplayMode::;
     this->ExpectedCameraTransitionTime = 0.00f;
-    this->NetworkConsensusRelevance = (ERelevanceType)140698270272880;
+    this->NetworkConsensusRelevance = ERelevanceType::;
     this->DefaultAttackCombo = NULL;
     this->SwimAttackCombo = NULL;
     this->DeathAttack = NULL;
@@ -559,7 +559,7 @@ ASurvivalCharacter::ASurvivalCharacter() {
     this->bInCombat = false;
     this->bReplicatedIsSprinting = false;
     this->bReplicatedAutorun = false;
-    this->ReplicatedDetachSplineReason = (EDetachSplineReason)140698270272880;
+    this->ReplicatedDetachSplineReason = EDetachSplineReason::;
     this->ReplicatedSplineProgress = 0.00f;
     this->ReplicatedAttachedZipline = NULL;
     this->ReplicatedZiplinePosition = 0.00f;
@@ -570,7 +570,7 @@ ASurvivalCharacter::ASurvivalCharacter() {
     this->FlyingLandAnim = NULL;
     this->FlyingTakeoffAnim = NULL;
     this->CachedAudioData = NULL;
-    this->InteractableAnimType = (EInteractAnimType)140698270272880;
+    this->InteractableAnimType = EInteractAnimType::;
     this->InteractableProp = NULL;
     this->AnimPropTemplate = NULL;
     this->GiveUpTime = 0.00f;

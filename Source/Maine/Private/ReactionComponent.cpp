@@ -60,7 +60,7 @@ UReactionComponent::UReactionComponent() {
     this->bOnlyStunFromBlocks = false;
     this->bOnlyStunWhileFlying = false;
     this->bFlinchOnTakeDamageDuringStun = true;
-    this->StunState = (EStunState)140698270272880;
+    this->StunState = EStunState::;
     this->StaggerThreshold = 0.00f;
     this->FlinchAnim = NULL;
     this->StunAnim = NULL;

@@ -1,7 +1,7 @@
 #include "SpeakerBundle.h"
 
 FSpeakerBundle::FSpeakerBundle() {
-    this->Gender = (EOEIGender)140698270272880;
+    this->Gender = EOEIGender::;
     this->bIsUniqueNPC = false;
 }
 

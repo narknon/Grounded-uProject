@@ -1,21 +1,33 @@
+//////////////////////////////////////////////////////
+// Copyright (C) Microsoft. 2018. All rights reserved.
+//////////////////////////////////////////////////////
+
+
 #pragma once
+
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
 #include "PlayFabRuntimeSettings.generated.h"
 
-UCLASS(Blueprintable, DefaultConfig)
-class PLAYFABCOMMON_API UPlayFabRuntimeSettings : public UObject {
+/**
+* Implements the settings for the PlayFab plugin in the Unreal GUI
+* This ends up being more like "build time constants", as they can't be changed at runtime
+*/
+UCLASS(config = Engine, defaultconfig)
+class PLAYFABCOMMON_API UPlayFabRuntimeSettings : public UObject
+{
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FString ProductionEnvironmentURL;
-    
-    UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FString TitleId;
-    
-    UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FString DeveloperSecretKey;
-    
     UPlayFabRuntimeSettings();
-};
 
+    // URL endpoint of the PlayFab production environment
+    UPROPERTY(EditAnywhere, config, Category = Settings)
+    FString ProductionEnvironmentURL;
+
+    // Game Title ID
+    UPROPERTY(EditAnywhere, config, Category = Settings)
+    FString TitleId;
+
+    // Secret Key, Do not add this to the clients!
+    UPROPERTY(EditAnywhere, config, Category = Settings)
+    FString DeveloperSecretKey;
+};

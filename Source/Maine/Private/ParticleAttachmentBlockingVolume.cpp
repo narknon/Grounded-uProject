@@ -6,6 +6,6 @@ AParticleAttachmentBlockingVolume::AParticleAttachmentBlockingVolume() {
     this->InnerBlockingVolume = CreateDefaultSubobject<USphereComponent>(TEXT("InnerBlockingVolume"));
     this->OuterBlockingVolume = CreateDefaultSubobject<USphereComponent>(TEXT("OuterBlockingVolume"));
     this->KillVolume = CreateDefaultSubobject<UBoxComponent>(TEXT("KillVolume"));
-    this->Type = (EParticleBlockingVolumeType)140698270272880;
+    this->Type = EParticleBlockingVolumeType::;
 }
 

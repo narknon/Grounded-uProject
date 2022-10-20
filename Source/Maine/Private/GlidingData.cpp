@@ -1,7 +1,7 @@
 #include "GlidingData.h"
 
 FGlidingData::FGlidingData() {
-    this->Style = (EGlidingStyle)140698270272880;
+    this->Style = EGlidingStyle::;
     this->StaminaDrainPerSecond = 0.00f;
     this->ForwardAcceleration = 0.00f;
     this->MaxForwardVelocity = 0.00f;

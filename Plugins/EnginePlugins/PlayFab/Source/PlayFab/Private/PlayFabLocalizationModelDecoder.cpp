@@ -1,11 +1,35 @@
+//////////////////////////////////////////////////////
+// Copyright (C) Microsoft. 2018. All rights reserved.
+//////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Automatically generated cpp file for the play fab models
+//
+// API: Localization
+//////////////////////////////////////////////////////////////////////////////////////////////
+
 #include "PlayFabLocalizationModelDecoder.h"
+#include "PlayFabPrivate.h"
 
-class UPlayFabJsonObject;
+//////////////////////////////////////////////////////////////////////////
+// Generated PlayFab Localization API Functions
+//////////////////////////////////////////////////////////////////////////
 
-FLocalizationGetLanguageListResponse UPlayFabLocalizationModelDecoder::decodeGetLanguageListResponseResponse(UPlayFabJsonObject* response) {
-    return FLocalizationGetLanguageListResponse{};
+
+///////////////////////////////////////////////////////
+// Localization
+//////////////////////////////////////////////////////
+
+FLocalizationGetLanguageListResponse UPlayFabLocalizationModelDecoder::decodeGetLanguageListResponseResponse(UPlayFabJsonObject* response)
+{
+    // Temp ustruct
+    FLocalizationGetLanguageListResponse tempStruct;
+    UPlayFabJsonObject* dataObj = !(response->HasField("data")) ? nullptr : response->GetObjectField("data");
+
+    tempStruct.LanguageList = !(dataObj->HasField("LanguageList")) ? TEXT("") : FString::Join(dataObj->GetStringArrayField("LanguageList"), TEXT(","));
+
+    return tempStruct;
 }
 
-UPlayFabLocalizationModelDecoder::UPlayFabLocalizationModelDecoder() {
-}
 

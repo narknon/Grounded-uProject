@@ -2,7 +2,7 @@
 
 FConditionalMusicTrack::FConditionalMusicTrack() {
     this->MusicTrack = NULL;
-    this->GlobalVariableComparisonOperator = (EComparisonOperator)140698270272880;
+    this->GlobalVariableComparisonOperator = EComparisonOperator::;
     this->GlobalVariableCompareValue = 0.00f;
 }
 

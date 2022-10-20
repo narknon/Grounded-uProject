@@ -215,7 +215,7 @@ ASpawnedItem::ASpawnedItem() {
     this->bDisableCollisionOnSleep = true;
     this->bSleepPhysicsDuringWaves = true;
     this->bIgnorePawnCollision = false;
-    this->EmbedOnHit = (ESpawnedItemEmbedType)140698270272880;
+    this->EmbedOnHit = ESpawnedItemEmbedType::;
     this->MinimumEmbedNormal = 0.00f;
     this->bRotateOnEmbed = false;
     this->bThrowStraight = false;

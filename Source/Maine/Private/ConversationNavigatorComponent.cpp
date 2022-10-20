@@ -18,9 +18,9 @@ bool UConversationNavigatorComponent::ShouldInterrupt(const FGuid& ConversationI
     return false;
 }
 
-void UConversationNavigatorComponent::ServerStartConversation_Implementation(AActor* OwnerActor, const FGuid& ConversationId, int32 NodeId, EConversationPlayPriority Priority, TEnumAsByte<EConversationNodeDisplayStyle> DisplayStyle) {
+void UConversationNavigatorComponent::ServerStartConversation_Implementation(AActor* OwnerActor, const FGuid& ConversationId, int32 NodeId, EConversationPlayPriority Priority, EConversationNodeDisplayStyle DisplayStyle) {
 }
-bool UConversationNavigatorComponent::ServerStartConversation_Validate(AActor* OwnerActor, const FGuid& ConversationId, int32 NodeId, EConversationPlayPriority Priority, TEnumAsByte<EConversationNodeDisplayStyle> DisplayStyle) {
+bool UConversationNavigatorComponent::ServerStartConversation_Validate(AActor* OwnerActor, const FGuid& ConversationId, int32 NodeId, EConversationPlayPriority Priority, EConversationNodeDisplayStyle DisplayStyle) {
     return true;
 }
 
@@ -63,10 +63,10 @@ bool UConversationNavigatorComponent::ServerAbortConversations_Validate() {
 void UConversationNavigatorComponent::RemovePlayerDrivenConversation(AActor* Owner) {
 }
 
-void UConversationNavigatorComponent::QueueConversation(AActor* OwnerActor, const FGuid& ConversationId, int32 NodeId, EConversationPlayPriority Priority, TEnumAsByte<EConversationNodeDisplayStyle> DisplayStyle) {
+void UConversationNavigatorComponent::QueueConversation(AActor* OwnerActor, const FGuid& ConversationId, int32 NodeId, EConversationPlayPriority Priority, EConversationNodeDisplayStyle DisplayStyle) {
 }
 
-void UConversationNavigatorComponent::MulticastStartConversation_Implementation(FGuid ConversationId, TEnumAsByte<EConversationNodeDisplayStyle> DisplayStyle) {
+void UConversationNavigatorComponent::MulticastStartConversation_Implementation(FGuid ConversationId, EConversationNodeDisplayStyle DisplayStyle) {
 }
 
 void UConversationNavigatorComponent::MulticastPlayChatterNode_Implementation(ASurvivalCharacter* OwnerActor, int32 NodeId) {
@@ -75,13 +75,13 @@ void UConversationNavigatorComponent::MulticastPlayChatterNode_Implementation(AS
 void UConversationNavigatorComponent::MulticastEndConversation_Implementation(const FGuid& ConversationId) {
 }
 
-void UConversationNavigatorComponent::MulticastAdvanceConversation_Implementation(AActor* OwnerActor, const FLocString& PlayerResponseLocString, const FGuid& ConversationId, int32 NodeId, const FBitArrayWrapper& ReadNodes, const TArray<int32>& ValidPlayerResponseNodeIds, TEnumAsByte<EConversationNodeDisplayStyle> DisplayStyle) {
+void UConversationNavigatorComponent::MulticastAdvanceConversation_Implementation(AActor* OwnerActor, const FLocString& PlayerResponseLocString, const FGuid& ConversationId, int32 NodeId, const FBitArrayWrapper& ReadNodes, const TArray<int32>& ValidPlayerResponseNodeIds, EConversationNodeDisplayStyle DisplayStyle) {
 }
 
 void UConversationNavigatorComponent::MulticastAbortChatter_Implementation() {
 }
 
-bool UConversationNavigatorComponent::IsPlayerDrivenNode(TEnumAsByte<EConversationNodeDisplayStyle> DisplayStyle, FGuid ConversationNavigatorID) {
+bool UConversationNavigatorComponent::IsPlayerDrivenNode(EConversationNodeDisplayStyle DisplayStyle, FGuid ConversationNavigatorID) {
     return false;
 }
 
@@ -89,7 +89,7 @@ bool UConversationNavigatorComponent::IsPlayerDrivenConversationAudioPlaying() {
     return false;
 }
 
-bool UConversationNavigatorComponent::IsPlayerDrivenConversation(TEnumAsByte<EConversationNodeDisplayStyle> DisplayStyle) {
+bool UConversationNavigatorComponent::IsPlayerDrivenConversation(EConversationNodeDisplayStyle DisplayStyle) {
     return false;
 }
 
@@ -111,15 +111,15 @@ void UConversationNavigatorComponent::EndLocalConversation(AActor* OwnerActor, c
 void UConversationNavigatorComponent::EndConversation(const FGuid& ConversationId, bool bViaStartNewConversation) {
 }
 
-void UConversationNavigatorComponent::AdvanceConversationAndUpdateReadNodes(AActor* OwnerActor, FLocString PlayerResponse, const FGuid& ConversationId, int32 NodeId, TEnumAsByte<EConversationNodeDisplayStyle> DisplayStyle) {
+void UConversationNavigatorComponent::AdvanceConversationAndUpdateReadNodes(AActor* OwnerActor, FLocString PlayerResponse, const FGuid& ConversationId, int32 NodeId, EConversationNodeDisplayStyle DisplayStyle) {
 }
 
-void UConversationNavigatorComponent::AdvanceConversation(AActor* OwnerActor, const FLocString& PlayerResponseLocString, const FGuid& ConversationId, int32 NodeId, TEnumAsByte<EConversationNodeDisplayStyle> DisplayStyle) {
+void UConversationNavigatorComponent::AdvanceConversation(AActor* OwnerActor, const FLocString& PlayerResponseLocString, const FGuid& ConversationId, int32 NodeId, EConversationNodeDisplayStyle DisplayStyle) {
 }
 
 void UConversationNavigatorComponent::AddPlayerDrivenConversation(const FActiveConversationData& Convo) {
 }
 
-UConversationNavigatorComponent::UConversationNavigatorComponent() {
+UConversationNavigatorComponent::UConversationNavigatorComponent() : Super(FObjectInitializer::Get()) {
 }
 

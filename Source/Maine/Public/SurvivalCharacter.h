@@ -636,7 +636,7 @@ public:
     void MulticastStartCaptureReaction(UAnimMontage* AnimMontage, bool bLockCharacter);
     
     UFUNCTION(NetMulticast, Unreliable, WithValidation)
-    void MulticastSetPawnCollision(TEnumAsByte<ECollisionResponse> CollisionResponse);
+    void MulticastSetPawnCollision(ECollisionResponse CollisionResponse);
     
     UFUNCTION(BlueprintCallable, NetMulticast, Reliable, WithValidation)
     void MulticastSetAnimMontageNextSection(UAnimMontage* AnimMontage, FName SectionToSet, FName NextSection, bool JumpIfNotInSection);

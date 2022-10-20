@@ -72,7 +72,7 @@ void UDefensePointComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty
 UDefensePointComponent::UDefensePointComponent() {
     this->bQuestCritical = false;
     this->DeinstanceRadius = 0.00f;
-    this->ChargeFailType = (EDefensePointChargeFailType)140698270272880;
+    this->ChargeFailType = EDefensePointChargeFailType::;
     this->ChargeInterval = 0.00f;
     this->ChargePerTarget = 0.00f;
     this->MaxCharge = 0.00f;
@@ -82,7 +82,7 @@ UDefensePointComponent::UDefensePointComponent() {
     this->OverrideMusicTrackIntense = NULL;
     this->ChargePercentageToStartMusicTrackIntense = 0.00f;
     this->UnderAttackChatterDelay = 0.00f;
-    this->CurrentState = (EDefensePointState)140698270272880;
+    this->CurrentState = EDefensePointState::;
     this->TotalActiveCreatures = 0.00f;
     this->CurrentActiveCreatures = 0.00f;
     this->bPassesConditionals = false;

@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "Item.h"
 #include "UObject/Interface.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "Engine/DataTable.h"
+
+
 #include "ItemContainerInterface.generated.h"
 
-class UItem;
+
 
 UINTERFACE(Blueprintable, MinimalAPI)
 class UItemContainerInterface : public UInterface {

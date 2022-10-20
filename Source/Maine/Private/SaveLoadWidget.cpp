@@ -16,6 +16,6 @@ void USaveLoadWidget::AuthorizeFriendForSharedSave(const FString& xuid, const FS
 
 USaveLoadWidget::USaveLoadWidget() {
     this->ImportSaveButton = NULL;
-    this->SaveLoadMenuMode = (ESaveLoadMenuMode)140698270272880;
+    this->SaveLoadMenuMode = ESaveLoadMenuMode::;
 }
 

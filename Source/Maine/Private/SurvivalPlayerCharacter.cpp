@@ -722,14 +722,14 @@ ASurvivalPlayerCharacter::ASurvivalPlayerCharacter() {
     this->CozinessEvaluatorComponent = CreateDefaultSubobject<UCozinessEvaluatorComponent>(TEXT("CozinessEvaluatorComponent"));
     this->ProximityInventoryComponent = CreateDefaultSubobject<UProximityInventoryComponent>(TEXT("ProximityInventoryComponent"));
     this->TransmissionReceiverComponent = NULL;
-    this->CharacterIdentity = (EPlayerCharacterIdentity)140698270272880;
+    this->CharacterIdentity = EPlayerCharacterIdentity::;
     this->InteractTraceLength = 0.00f;
     this->bIsInteracting = false;
     this->bIsInteractHoldAnim = false;
     this->InteractTimerMax = 0.00f;
     this->CancelInteractTimerMax = 0.00f;
     this->CurrentInteractable = NULL;
-    this->CurrentInteractionChannel = (EInteractionChannel)140698270272880;
+    this->CurrentInteractionChannel = EInteractionChannel::;
     this->ThirdPersonZeroDistance = 0.00f;
     this->ThirdPersonBufferDistance = 0.00f;
     this->RunFOVAdjustment = 0.00f;

@@ -1,5 +1,5 @@
 #include "MaineAISystem.h"
 
-UMaineAISystem::UMaineAISystem() {
+UMaineAISystem::UMaineAISystem() : Super (FObjectInitializer::Get()) {
 }
 

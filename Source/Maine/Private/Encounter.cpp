@@ -25,7 +25,7 @@ void AEncounter::Despawn(bool bImmediate) {
 }
 
 AEncounter::AEncounter() {
-    this->MinimumDifficulty = (EGameDifficulty)140698270272880;
+    this->MinimumDifficulty = EGameDifficulty::;
     this->MinimumPlayers = 0.00f;
     this->StartActivated = true;
     this->SpawnRandomlyInRadius = false;

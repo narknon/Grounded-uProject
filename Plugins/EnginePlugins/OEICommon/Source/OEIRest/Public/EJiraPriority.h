@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "EJiraPriority.generated.h"
 
-UENUM(BlueprintType)
-enum class EJiraPriority : uint8 {
+UENUM(meta = (Bitflags, UseEnumValuesAsMaskValuesInEditor = "true"))
+enum class EJiraPriority : uint32 {
     A1 = 0x2710,
     A2,
     A3,
@@ -12,4 +12,6 @@ enum class EJiraPriority : uint8 {
     D,
     Unknown = 0xFFFF,
 };
+
+ENUM_CLASS_FLAGS(EJiraPriority);
 

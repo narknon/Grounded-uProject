@@ -24,8 +24,8 @@ UGoapAction::UGoapAction() {
     this->IndefiniteDuration = false;
     this->bOwnerOnly = false;
     this->bObstructionTrace = false;
-    this->Facing = (EFaceTargetType)140698270272880;
-    this->InteractAnimType = (EInteractAnimType)140698270272880;
+    this->Facing = EFaceTargetType::;
+    this->InteractAnimType = EInteractAnimType::;
     this->Cooldown = 0.00f;
 }
 

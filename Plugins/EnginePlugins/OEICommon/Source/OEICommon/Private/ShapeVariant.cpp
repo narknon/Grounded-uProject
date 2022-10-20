@@ -1,6 +1,6 @@
 #include "ShapeVariant.h"
 
 FShapeVariant::FShapeVariant() {
-    this->ShapeType = (EShapeType)140698270272880;
+    this->ShapeType = EShapeType::Box;
 }
 

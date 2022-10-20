@@ -443,7 +443,7 @@ bool ABuilding::CheckAdditionalPlacementRequirements_Implementation(FBuildingGri
     return false;
 }
 
-TEnumAsByte<EInteractionState> ABuilding::CanUse_Implementation(EInteractionChannel Channel, const AActor* InstigatedBy) const {
+EInteractionState ABuilding::CanUse_Implementation(EInteractionChannel Channel, const AActor* InstigatedBy) const {
     return Hidden;
 }
 
@@ -493,7 +493,7 @@ ABuilding::ABuilding() {
     this->Shape = NULL;
     this->LiteData = NULL;
     this->ActualWorldRotation = 0.00f;
-    this->TerrainConform = (EBuildingTerrainConformMode)140698270272880;
+    this->TerrainConform = EBuildingTerrainConformMode::;
     this->bAutoPlacementLocations = false;
     this->RequiredPointsOfContact = 3;
     this->MaxSlope = 0.00f;
@@ -511,14 +511,14 @@ ABuilding::ABuilding() {
     this->PowerValue = 0.00f;
     this->NetworkPower = 0.00f;
     this->BaseIndex = 0.00f;
-    this->BuildingState = (EBuildingState)140698270272880;
+    this->BuildingState = EBuildingState::;
     this->StaticMeshComponent = NULL;
     this->DeconstructionVFX = NULL;
     this->HUDMarkerVariant = 0;
     this->HUDMarkerColorVariant = 0.00f;
-    this->BuiltHUDMakerType = (EHUDMarkerType)140698270272880;
-    this->UseInteractionType = (EInteractionType)140698270272880;
-    this->FireType = (EBuildingFireType)140698270272880;
+    this->BuiltHUDMakerType = EHUDMarkerType::;
+    this->UseInteractionType = EInteractionType::;
+    this->FireType = EBuildingFireType::;
     this->ShowDistanceOnHudMarker = false;
     this->IsLitWithFire = false;
     this->bProvidesSupport = true;
@@ -536,7 +536,7 @@ ABuilding::ABuilding() {
     this->DestroyedByCreatureDropIngredientsPercentage = 0.00f;
     this->WeightMultiplier = 0.00f;
     this->NavAreaClass = UNavArea_Obstacle::StaticClass();
-    this->AnchoredSurface = (EBuildingGridSurfaceType)140698270272880;
+    this->AnchoredSurface = EBuildingGridSurfaceType::;
     this->IsValidWaveAnchor = false;
     this->HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("HealthComponent"));
     this->TeamComponent = CreateDefaultSubobject<UTeamComponent>(TEXT("TeamComponent"));

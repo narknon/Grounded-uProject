@@ -1,8 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
 #include "DynamicMaterialColorKey.h"
-#include "UObject/NoExportTypes.h"
+
 #include "DynamicMaterialCache.generated.h"
 
 class UMeshComponent;
