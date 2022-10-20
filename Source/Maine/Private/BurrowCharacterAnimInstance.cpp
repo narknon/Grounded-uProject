@@ -2,6 +2,6 @@
 
 UBurrowCharacterAnimInstance::UBurrowCharacterAnimInstance() {
     this->IsBurrowed = false;
-    this->BurrowState = EBurrowState::;
+    /*this->BurrowState = EBurrowState::;*/
 }
 

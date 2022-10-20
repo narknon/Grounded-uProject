@@ -22,7 +22,7 @@ void UWidgetInteractComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProper
 UWidgetInteractComponent::UWidgetInteractComponent() {
     this->bAllowMultipleUsers = false;
     this->bAllowInteractMidCombat = true;
-    this->DefaultInteractionType = EInteractionType::;
+    /*this->DefaultInteractionType = EInteractionType::;*/
     this->bInUse = false;
 }
 

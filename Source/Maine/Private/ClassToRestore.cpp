@@ -1,6 +1,6 @@
 #include "ClassToRestore.h"
 
 FClassToRestore::FClassToRestore() {
-    this->ExceptionRestoreOption = EExceptionRestoreOption::;
+    /*this->ExceptionRestoreOption = EExceptionRestoreOption::;*/
 }
 

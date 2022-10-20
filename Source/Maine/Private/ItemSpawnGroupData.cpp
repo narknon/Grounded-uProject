@@ -11,9 +11,9 @@ bool UItemSpawnGroupData::HasEventInterval(ESpawnIntervalBehavior Event) const {
 UItemSpawnGroupData::UItemSpawnGroupData() {
     this->BillboardSprite = NULL;
     this->NeverReuseSpawnPoints = false;
-    this->PlayerProximityBehavior = ESpawnProximityBehavior::;
+    /*this->PlayerProximityBehavior = ESpawnProximityBehavior::;*/
     this->RaycastSoftSpawns = true;
-    this->GlobalVariableComparisonOperator = EComparisonOperator::;
+    /*this->GlobalVariableComparisonOperator = EComparisonOperator::;*/
     this->GlobalVariableCompareValue = 0.00f;
     this->ForceDespawnOnConditionNotMet = true;
     this->PlayerSpawnDistance = 0.00f;

@@ -30,6 +30,6 @@ USurvivalGameModeSettings::USurvivalGameModeSettings() {
     this->ItemDurabilityMultiplier = 0.00f;
     this->ItemDurabilityPenaltyOnDeathPercentage = 0.00f;
     this->SizzleMultiplier = 0.00f;
-    this->DeathBehavior = EPlayerDeathBehavior::;
+    /*this->DeathBehavior = EPlayerDeathBehavior::;*/
 }
 

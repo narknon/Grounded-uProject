@@ -1,6 +1,6 @@
 #include "ConsumableData.h"
 
 FConsumableData::FConsumableData() {
-    this->ConsumeChatterType = EChatterConsumableType::;
+    /*this->ConsumeChatterType = EChatterConsumableType::;*/
 }
 

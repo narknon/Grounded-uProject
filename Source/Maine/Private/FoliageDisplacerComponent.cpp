@@ -7,6 +7,6 @@ UFoliageDisplacerComponent::UFoliageDisplacerComponent() {
     this->MaxVelocityCompensation = 0.00f;
     this->SpeedAudioSmoothingSpeed = 0.00f;
     this->EnergyAudioSmoothingSpeed = 0.00f;
-    this->SwapLevel = EFoliageSwapLevel::;
+    /*this->SwapLevel = EFoliageSwapLevel::;*/
 }
 

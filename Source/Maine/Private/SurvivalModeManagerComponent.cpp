@@ -58,7 +58,7 @@ void USurvivalModeManagerComponent::GetLifetimeReplicatedProps(TArray<FLifetimeP
 }
 
 USurvivalModeManagerComponent::USurvivalModeManagerComponent() {
-    this->CurrentGameMode = EGameMode::;
+    /*this->CurrentGameMode = EGameMode::;*/
     this->GameModeSettings = NULL;
 }
 

@@ -1,6 +1,6 @@
 #include "StencilRequiredGlobalPostProcessMaterial.h"
 
 FStencilRequiredGlobalPostProcessMaterial::FStencilRequiredGlobalPostProcessMaterial() {
-    this->Bits = EManagedPostProcessBitMasks::;
+    /*this->Bits = EManagedPostProcessBitMasks::;*/
 }
 

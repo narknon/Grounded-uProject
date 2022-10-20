@@ -1,6 +1,6 @@
 #include "OEIVoiceOverSettings.h"
 
 UOEIVoiceOverSettings::UOEIVoiceOverSettings() {
-    this->AudioImplementation = EVoiceOverAudioImplementationType::;
+    /*this->AudioImplementation = EVoiceOverAudioImplementationType::;*/
 }
 

@@ -18,7 +18,7 @@ int32 AMaineTriggerBase::GetTriggerCount() const {
 AMaineTriggerBase::AMaineTriggerBase() {
     this->MaxTriggerCount = 0.00f;
     this->bPlayersOnly = true;
-    this->TriggerType = ETriggerType::;
+    /*this->TriggerType = ETriggerType::;*/
     this->CollisionComponent = NULL;
     this->ObsidianIDComponent = CreateDefaultSubobject<UObsidianIDComponent>(TEXT("ObsidianIDComponent"));
     this->PersistenceComponent = CreateDefaultSubobject<UPersistenceComponent>(TEXT("PersistenceComponent"));

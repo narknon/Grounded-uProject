@@ -16,7 +16,7 @@ ADefensePointPingVolume::ADefensePointPingVolume() {
     this->CanRetrigger = true;
     this->PingPreciseLocation = false;
     this->OneTimeOnly = false;
-    this->HUDMarkerType = EHUDMarkerType::;
+    /*this->HUDMarkerType = EHUDMarkerType::;*/
     this->HUDMarkerVariation = 0.00f;
 }
 

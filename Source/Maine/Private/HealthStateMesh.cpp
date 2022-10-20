@@ -1,7 +1,7 @@
 #include "HealthStateMesh.h"
 
 FHealthStateMesh::FHealthStateMesh() {
-    this->HealthState = EHealthVisualState::;
+    /*this->HealthState = EHealthVisualState::;*/
     this->StaticMesh = NULL;
 }
 

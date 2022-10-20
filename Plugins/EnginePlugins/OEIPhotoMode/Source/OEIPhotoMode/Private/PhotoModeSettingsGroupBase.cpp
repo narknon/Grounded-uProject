@@ -36,6 +36,6 @@ UPhotoModeSettingWidget* UPhotoModeSettingsGroupBase::GetFirstSetting() const {
 UPhotoModeSettingsGroupBase::UPhotoModeSettingsGroupBase() : UUserWidget(FObjectInitializer::Get()) {
     this->container = NULL;
     this->SettingsBox = NULL;
-    this->SettingGroup = (EPhotoSettingsGroup)140698270272880;
+    /*this->SettingGroup = (EPhotoSettingsGroup)140698270272880*/;
 }
 

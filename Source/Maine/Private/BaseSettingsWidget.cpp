@@ -32,6 +32,6 @@ UBaseSettingsWidget::UBaseSettingsWidget() {
     this->bShowKeybindingControls = false;
     this->bApplyImmediately = false;
     this->bCacheAndConfirm = false;
-    this->PlatformSetting = EPlatformToggleSetting::;
+    /*this->PlatformSetting = EPlatformToggleSetting::;*/
 }
 

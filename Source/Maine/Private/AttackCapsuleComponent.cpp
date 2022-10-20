@@ -13,7 +13,7 @@ void UAttackCapsuleComponent::OnBeginOverlap(UPrimitiveComponent* OverlappedComp
 }
 
 UAttackCapsuleComponent::UAttackCapsuleComponent() {
-    this->AttackType = EAttackCapsuleType::;
+    /*this->AttackType = EAttackCapsuleType::;*/
     this->ForceValue = 0.00f;
     this->PullAcceptableDistance = 0.00f;
 }

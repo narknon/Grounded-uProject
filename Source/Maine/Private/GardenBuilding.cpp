@@ -89,7 +89,7 @@ void AGardenBuilding::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutL
 AGardenBuilding::AGardenBuilding() {
     this->CatalystSlots = 0.00f;
     this->ModifierSlots = 0.00f;
-    this->GardenState = EGardenState::;
+    /*this->GardenState = EGardenState::;*/
     this->Duration = 0.00f;
     this->CompletionTime = 0.00f;
     this->MinScale = 0.00f;

@@ -44,8 +44,8 @@ void APowerStorageBuilding::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>
 
 APowerStorageBuilding::APowerStorageBuilding() {
     this->PowerCapacity = 0.00f;
-    this->ItemDepostAnimType = EInteractAnimType::;
-    this->ItemChargeAnimType = EInteractAnimType::;
-    this->ManualInteractAnimType = EInteractAnimType::;
+    /*this->ItemDepostAnimType = EInteractAnimType::;*/
+    /*this->ItemChargeAnimType = EInteractAnimType::;*/
+    /*this->ManualInteractAnimType = EInteractAnimType::;*/
 }
 

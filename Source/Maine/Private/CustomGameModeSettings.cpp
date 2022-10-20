@@ -1,7 +1,7 @@
 #include "CustomGameModeSettings.h"
 
 FCustomGameModeSettings::FCustomGameModeSettings() {
-    this->GameDifficulty = EGameDifficulty::;
+    /*this->GameDifficulty = EGameDifficulty::;*/
     this->bCreativeMode = false;
     this->bEncountersEnabled = false;
     this->bCreaturesIgnorePlayers = false;
@@ -16,6 +16,6 @@ FCustomGameModeSettings::FCustomGameModeSettings() {
     this->bPetInvincible = false;
     this->bMenusPauseGame = false;
     this->bWavesEnabled = false;
-    this->DeathBehavior = EPlayerDeathBehavior::;
+    /*this->DeathBehavior = EPlayerDeathBehavior::;*/
 }
 

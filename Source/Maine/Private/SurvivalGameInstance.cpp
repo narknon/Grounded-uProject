@@ -290,7 +290,7 @@ void USurvivalGameInstance::AcceptInvite(const FBlueprintSessionResult AcceptedI
 
 USurvivalGameInstance::USurvivalGameInstance() {
     this->bIsUsingGamepadControls = false;
-    this->CurrentGameInputType = EGameInputType::;
+    /*this->CurrentGameInputType = EGameInputType::;*/
     this->GameOptions = NULL;
     this->WidgetManager = NULL;
     this->NarrationConfig = NULL;
@@ -320,13 +320,13 @@ USurvivalGameInstance::USurvivalGameInstance() {
     this->PasswordProtectedGameSelected = false;
     this->ForceShowLoginUIRequested = false;
     this->HasVisitedMenuLevel = false;
-    this->SelectedGameMode = EGameMode::;
+    /*this->SelectedGameMode = EGameMode::;*/
     this->AutoPlayer = NULL;
     this->MemoryReport = NULL;
     this->PhysicsStateManager = NULL;
     this->RenderStateManager = NULL;
-    this->EditorOverrideContentType = EGameContentType::;
-    this->EditorOverridePackageType = EGamePackageType::;
+    /*this->EditorOverrideContentType = EGameContentType::;*/
+    /*this->EditorOverridePackageType = EGamePackageType::;*/
     this->PhotoModeConfiguration = NULL;
 }
 

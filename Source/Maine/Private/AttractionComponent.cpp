@@ -30,6 +30,6 @@ UAttractionComponent::UAttractionComponent() {
     this->bProjectToGround = false;
     this->bForceNoTrack = false;
     this->bForceRuntimeActionAlloc = false;
-    this->GeneratedLocationType = EGeneratedLocationType::;
+    /*this->GeneratedLocationType = EGeneratedLocationType::;*/
 }
 

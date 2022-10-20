@@ -13,7 +13,7 @@ UCharacterAnimInstance::UCharacterAnimInstance() {
     this->IsFlying = false;
     this->IsSwimming = false;
     this->IsSitting = false;
-    this->GlidingStyle = EGlidingStyle::;
+    /*this->GlidingStyle = EGlidingStyle::;*/
     this->bIsZiplining = false;
     this->IsCrouching = false;
     this->IsSprinting = false;
@@ -33,7 +33,7 @@ UCharacterAnimInstance::UCharacterAnimInstance() {
     this->IsTurning = false;
     this->IsEquipping = false;
     this->IsAuthorityOrLocallyControlled = false;
-    this->ActivityMode = ECreatureActivityMode::;
+    /*this->ActivityMode = ECreatureActivityMode::;*/
     this->TurnDelta = 0.00f;
     this->TurnDeltaSmoothed = 0.00f;
     this->Stance = 0.00f;

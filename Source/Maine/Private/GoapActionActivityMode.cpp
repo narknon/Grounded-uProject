@@ -1,6 +1,6 @@
 #include "GoapActionActivityMode.h"
 
 UGoapActionActivityMode::UGoapActionActivityMode() {
-    this->ActivityMode = ECreatureActivityMode::;
+    /*this->ActivityMode = ECreatureActivityMode::;*/
 }
 

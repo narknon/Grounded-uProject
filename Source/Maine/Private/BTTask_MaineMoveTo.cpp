@@ -1,7 +1,7 @@
 #include "BTTask_MaineMoveTo.h"
 
 UBTTask_MaineMoveTo::UBTTask_MaineMoveTo() {
-    this->MovementSpeed = EMovementSpeed::;
+    /*this->MovementSpeed = EMovementSpeed::;*/
     this->MaxMoveDuration = 0.00f;
     this->RandomDeviation = 0.00f;
     this->SprintAfterDistance = 0.00f;

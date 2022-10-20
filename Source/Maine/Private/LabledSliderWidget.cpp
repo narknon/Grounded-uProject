@@ -27,6 +27,6 @@ ULabledSliderWidget::ULabledSliderWidget() {
     this->MinValue = 0.00f;
     this->MaxValue = 0.00f;
     this->StepSize = 0.00f;
-    this->TextDisplayType = ETextDisplayType::;
+    /*this->TextDisplayType = ETextDisplayType::;*/
 }
 

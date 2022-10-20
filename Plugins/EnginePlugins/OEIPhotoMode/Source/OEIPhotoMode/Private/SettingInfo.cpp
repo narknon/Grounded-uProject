@@ -1,6 +1,6 @@
 #include "SettingInfo.h"
 
 FSettingInfo::FSettingInfo() {
-    this->InputType = EPhotoModeInputType::;
+    /*this->InputType = EPhotoModeInputType::;*/
 }
 

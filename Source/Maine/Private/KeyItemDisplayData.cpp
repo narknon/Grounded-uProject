@@ -2,6 +2,6 @@
 
 FKeyItemDisplayData::FKeyItemDisplayData() {
     this->Icon = NULL;
-    this->Visibility = EKeyItemVisibility::;
+    /*this->Visibility = EKeyItemVisibility::;*/
 }
 

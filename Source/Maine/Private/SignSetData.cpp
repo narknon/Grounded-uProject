@@ -2,6 +2,6 @@
 
 FSignSetData::FSignSetData() {
     this->Table = NULL;
-    this->UnlockType = ESignUnlockType::;
+    /*this->UnlockType = ESignUnlockType::;*/
 }
 

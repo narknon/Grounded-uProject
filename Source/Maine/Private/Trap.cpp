@@ -68,8 +68,8 @@ void ATrap::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimePro
 }
 
 ATrap::ATrap() {
-    this->TrapArmedSetting = ETrapArmedSetting::;
-    this->TrapApplyType = ETrapApplyType::;
+    /*this->TrapArmedSetting = ETrapArmedSetting::;*/
+    /*this->TrapApplyType = ETrapApplyType::;*/
     this->TriggerDelay = 0.00f;
     this->TriggerRearmTime = 0.00f;
     this->bDestroyOnTrigger = false;
@@ -84,7 +84,7 @@ ATrap::ATrap() {
     this->TrapAttack = NULL;
     this->ItemsAdded = 0.00f;
     this->bTrapArmed = false;
-    this->TrapTriggerState = ETrapTriggerState::;
+    /*this->TrapTriggerState = ETrapTriggerState::;*/
     this->AttackHandlerComponent = CreateDefaultSubobject<UAttackHandlerComponent>(TEXT("AttackHandlerComponent"));
 }
 

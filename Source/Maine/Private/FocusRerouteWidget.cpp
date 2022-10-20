@@ -1,6 +1,6 @@
 #include "FocusRerouteWidget.h"
 
 UFocusRerouteWidget::UFocusRerouteWidget() : UUserWidget(FObjectInitializer::Get()) {
-    this->ChildInterationStyle = EFocusRerouterChildIterationStyle::;
+    /*this->ChildInterationStyle = EFocusRerouterChildIterationStyle::;*/
 }
 

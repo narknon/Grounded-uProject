@@ -493,7 +493,7 @@ ABuilding::ABuilding() {
     this->Shape = NULL;
     this->LiteData = NULL;
     this->ActualWorldRotation = 0.00f;
-    this->TerrainConform = EBuildingTerrainConformMode::;
+    /*this->TerrainConform = EBuildingTerrainConformMode::;*/
     this->bAutoPlacementLocations = false;
     this->RequiredPointsOfContact = 3;
     this->MaxSlope = 0.00f;
@@ -511,14 +511,14 @@ ABuilding::ABuilding() {
     this->PowerValue = 0.00f;
     this->NetworkPower = 0.00f;
     this->BaseIndex = 0.00f;
-    this->BuildingState = EBuildingState::;
+    /*this->BuildingState = EBuildingState::;*/
     this->StaticMeshComponent = NULL;
     this->DeconstructionVFX = NULL;
     this->HUDMarkerVariant = 0;
     this->HUDMarkerColorVariant = 0.00f;
-    this->BuiltHUDMakerType = EHUDMarkerType::;
-    this->UseInteractionType = EInteractionType::;
-    this->FireType = EBuildingFireType::;
+    /*this->BuiltHUDMakerType = EHUDMarkerType::;*/
+    /*this->UseInteractionType = EInteractionType::;*/
+    /*this->FireType = EBuildingFireType::;*/
     this->ShowDistanceOnHudMarker = false;
     this->IsLitWithFire = false;
     this->bProvidesSupport = true;
@@ -536,7 +536,7 @@ ABuilding::ABuilding() {
     this->DestroyedByCreatureDropIngredientsPercentage = 0.00f;
     this->WeightMultiplier = 0.00f;
     this->NavAreaClass = UNavArea_Obstacle::StaticClass();
-    this->AnchoredSurface = EBuildingGridSurfaceType::;
+    /*this->AnchoredSurface = EBuildingGridSurfaceType::;*/
     this->IsValidWaveAnchor = false;
     this->HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("HealthComponent"));
     this->TeamComponent = CreateDefaultSubobject<UTeamComponent>(TEXT("TeamComponent"));

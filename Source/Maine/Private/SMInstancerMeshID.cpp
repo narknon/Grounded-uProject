@@ -9,7 +9,7 @@ FSMInstancerMeshID::FSMInstancerMeshID() {
     this->UseEmissiveForStaticLighting = false;
     this->EmissiveBoost = 0.00f;
     this->CastShadow = false;
-    this->LightmapType = ELightmapType::;
+    /*this->LightmapType = ELightmapType::;*/
     this->bOverrideLightmapType = false;
     this->bCastFarShadow = false;
     this->bHiddenShadow = false;

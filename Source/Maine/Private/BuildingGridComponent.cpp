@@ -173,7 +173,7 @@ void UBuildingGridComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty
 UBuildingGridComponent::UBuildingGridComponent() {
     this->BaseIndex = 0.00f;
     this->bIsDynamicallyCreated = false;
-    this->SurfaceType = EBuildingGridSurfaceType::;
+    /*this->SurfaceType = EBuildingGridSurfaceType::;*/
     this->TimeSinceCreation = 0.00f;
 }
 

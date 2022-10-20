@@ -138,7 +138,7 @@ UMaineCharMovementComponent::UMaineCharMovementComponent() {
     this->MaxSwimSprintSpeed = 0.00f;
     this->ClimbingSprintSpeedMultiplier = 0.00f;
     this->bExitSplinesAtEnds = false;
-    this->ClimbSplineRotationType = EClimbSplineRotationType::;
+    /*this->ClimbSplineRotationType = EClimbSplineRotationType::;*/
     this->bAnyDamageExitsSpline = true;
     this->bCanWallCrawl = false;
     this->MaxSpeedMultiplier_Nav = NULL;

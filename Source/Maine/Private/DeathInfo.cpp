@@ -3,7 +3,7 @@
 FDeathInfo::FDeathInfo() {
     this->DamageType = NULL;
     this->DamageInstigator = NULL;
-    this->DamageSourceType = EDamageSourceType::;
+    /*this->DamageSourceType = EDamageSourceType::;*/
     this->bIsIncapacitate = false;
 }
 

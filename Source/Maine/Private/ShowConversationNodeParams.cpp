@@ -2,7 +2,7 @@
 
 FShowConversationNodeParams::FShowConversationNodeParams() {
     this->DisplayStyle = Undefined;
-    this->DisplayType = ENodeDisplayType::;
+    /*this->DisplayType = ENodeDisplayType::;*/
     this->bIsPlayingVoice = false;
     this->bHideSpeaker = false;
 }

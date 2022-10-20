@@ -1,6 +1,6 @@
 #include "MaskableBoxComponent.h"
 
 UMaskableBoxComponent::UMaskableBoxComponent() {
-    this->MaskCategory = ECollisionMaskCategory::;
+    /*this->MaskCategory = ECollisionMaskCategory::;*/
 }
 

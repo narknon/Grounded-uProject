@@ -3,6 +3,6 @@
 AWaveSpawnTarget::AWaveSpawnTarget() {
     this->bIsObstructed = false;
     this->Volume = NULL;
-    this->AllowedTypes = ESpawnTargetAllowedTypes::;
+    /*this->AllowedTypes = ESpawnTargetAllowedTypes::;*/
 }
 

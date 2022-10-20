@@ -16,7 +16,7 @@ USplineComponent* ABirdLandSpot::GetEnterSpline() const {
 
 ABirdLandSpot::ABirdLandSpot() {
     this->ObsidianIDComponent = CreateDefaultSubobject<UObsidianIDComponent>(TEXT("ObsidianIDComponent"));
-    this->SpotType = EBirdSpotType::;
+    /*this->SpotType = EBirdSpotType::;*/
     this->EnterSpline = CreateDefaultSubobject<USplineComponent>(TEXT("EnterSpline"));
     this->ExitSpline = CreateDefaultSubobject<USplineComponent>(TEXT("ExitSpline"));
 }

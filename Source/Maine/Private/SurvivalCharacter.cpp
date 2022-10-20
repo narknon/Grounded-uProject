@@ -539,13 +539,13 @@ ASurvivalCharacter::ASurvivalCharacter() {
     this->AttackHandlerComponent = CreateDefaultSubobject<UAttackHandlerComponent>(TEXT("AttackHandlerComponent"));
     this->AttackInputBufferTime = 0.00f;
     this->DefaultAttackTier = 0.00f;
-    this->AlternateAttackFunction = EAlternateAttackFunction::;
-    this->PlayerDisplayMode = ECameraDisplayMode::;
+    /*this->AlternateAttackFunction = EAlternateAttackFunction::;*/
+    /*this->PlayerDisplayMode = ECameraDisplayMode::;*/
     this->OverrideViewTarget = NULL;
     this->VoiceOverAudioComponent = CreateDefaultSubobject<UAudioComponent>(TEXT("VoiceOverAudioComponent"));
-    this->ExpectedCameraViewPoint = ECameraDisplayMode::;
+    /*this->ExpectedCameraViewPoint = ECameraDisplayMode::;*/
     this->ExpectedCameraTransitionTime = 0.00f;
-    this->NetworkConsensusRelevance = ERelevanceType::;
+    /*this->NetworkConsensusRelevance = ERelevanceType::;*/
     this->DefaultAttackCombo = NULL;
     this->SwimAttackCombo = NULL;
     this->DeathAttack = NULL;
@@ -559,7 +559,7 @@ ASurvivalCharacter::ASurvivalCharacter() {
     this->bInCombat = false;
     this->bReplicatedIsSprinting = false;
     this->bReplicatedAutorun = false;
-    this->ReplicatedDetachSplineReason = EDetachSplineReason::;
+    /*this->ReplicatedDetachSplineReason = EDetachSplineReason::;*/
     this->ReplicatedSplineProgress = 0.00f;
     this->ReplicatedAttachedZipline = NULL;
     this->ReplicatedZiplinePosition = 0.00f;
@@ -570,7 +570,7 @@ ASurvivalCharacter::ASurvivalCharacter() {
     this->FlyingLandAnim = NULL;
     this->FlyingTakeoffAnim = NULL;
     this->CachedAudioData = NULL;
-    this->InteractableAnimType = EInteractAnimType::;
+    /*this->InteractableAnimType = EInteractAnimType::;*/
     this->InteractableProp = NULL;
     this->AnimPropTemplate = NULL;
     this->GiveUpTime = 0.00f;

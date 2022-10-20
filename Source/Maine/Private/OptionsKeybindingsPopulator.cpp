@@ -3,7 +3,7 @@
 UOptionsKeybindingsPopulator::UOptionsKeybindingsPopulator() {
     this->ControlListBox = NULL;
     this->ChildClass = NULL;
-    this->Category = EBindableControlCategory::;
+    /*this->Category = EBindableControlCategory::;*/
     this->bGamepadControls = false;
 }
 

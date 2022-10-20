@@ -26,6 +26,6 @@ UTerminalWidget::UTerminalWidget() {
     this->InteractionBlocked = false;
     this->CurrentWidget = NULL;
     this->CurrentAnimation = NULL;
-    this->CurrentState = ETerminalWidgetState::;
+    /*this->CurrentState = ETerminalWidgetState::;*/
 }
 

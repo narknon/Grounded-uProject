@@ -33,7 +33,7 @@ ATerminalSwitch::ATerminalSwitch() {
     this->PlayerBlocker = CreateDefaultSubobject<UBoxComponent>(TEXT("PlayerBlocker"));
     this->ScreenMaterial = NULL;
     this->CurrentStateIndex = 0.00f;
-    this->CurrentWidgetState = ETerminalWidgetState::;
+    /*this->CurrentWidgetState = ETerminalWidgetState::;*/
     this->ActiveWidget = NULL;
     this->ScreenMID = NULL;
 }

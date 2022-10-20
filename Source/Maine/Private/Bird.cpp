@@ -32,7 +32,7 @@ ABird::ABird() {
     this->FlySpeed = 0.00f;
     this->LandingDistance = 0.00f;
     this->TakeOffDistance = 0.00f;
-    this->CurrentState = EBirdState::;
+    /*this->CurrentState = EBirdState::;*/
     this->CurrentLandSpot = NULL;
     this->PersistenceComponent = CreateDefaultSubobject<UPersistenceComponent>(TEXT("PersistenceComponent"));
     this->ObsidianIDComponent = CreateDefaultSubobject<UObsidianIDComponent>(TEXT("ObsidianIDComponent"));
