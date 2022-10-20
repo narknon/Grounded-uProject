@@ -9,7 +9,9 @@
 
 #pragma once
 #include "Brushes/SlateColorBrush.h"
-#include "Query/TelemetryQuery.h"
+#include "GameTelemetryVisualizer/Classes/TelemetryEvent.h"
+#include "GameTelemetryVisualizer/Public/Query/TelemetryQuery.h"
+
 
 //Setting whether to draw recieved events by default
 static const bool DefaultDrawSetting = true;
@@ -180,7 +182,7 @@ public:
 	{
 		FString valueName;
 		double value = 0.f;
-		bool isPct = false;
+		isPct = false;
 
 		//Check for a specified value the event wants to draw
 		if (newEvent.GetString(L"disp_val", valueName))

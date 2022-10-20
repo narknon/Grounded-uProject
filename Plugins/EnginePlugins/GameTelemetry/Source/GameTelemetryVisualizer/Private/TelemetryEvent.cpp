@@ -11,14 +11,15 @@
 #include "TelemetryVisualizerPCH.h"
 #include "TelemetryVisualizerTypes.h"
 #include "Materials/MaterialInstanceDynamic.h"
+
 #include "UObject/ConstructorHelpers.h"
 
 ATelemetryEvent::ATelemetryEvent(const FObjectInitializer& InInitializer)
 : AActor(InInitializer)
 {
 	//Cannot move this actor or interact in play
+	SetCanBeDamaged(false);
 	bLockLocation = true;
-	bCanBeDamaged = false;
 	bIsEditorOnlyActor = true;
 	SetActorEnableCollision(false);
 

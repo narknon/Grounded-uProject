@@ -45,3 +45,4 @@ public:
     FItemSpawnPointData();
 };
 
+FORCEINLINE uint32 GetTypeHash(const FItemSpawnPointData) { return 0; };

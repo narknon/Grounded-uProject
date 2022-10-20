@@ -14,3 +14,4 @@ public:
     MAINE_API FActorMaterialKey();
 };
 
+FORCEINLINE uint32 GetTypeHash(const FActorMaterialKey) { return 0; };

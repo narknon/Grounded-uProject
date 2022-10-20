@@ -10,8 +10,13 @@ public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGuid ID;
+
+    
     
 public:
     FGlobalVariableReference();
+
+    
 };
 
+FORCEINLINE uint32 GetTypeHash(const FGlobalVariableReference) { return 0; };

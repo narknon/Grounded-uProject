@@ -1,17 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
-#include "PersistentInterface.h"
 #include "ItemSpawnGroup.h"
-#include "TrackedSpawnsChangedDelegate.h"
-#include "ItemSpawnPointData.h"
+#include "ItemSpawnGroupData.h"
+#include "PersistentInterface.h"
 #include "TrackedSpawnData.h"
-#include "UObject/NoExportTypes.h"
-#include "ItemSpawnGroupEvent.h"
+#include "TrackedSpawnsChangedDelegate.h"
+#include "UObject/Object.h"
+
 #include "TrackedItemSpawnGroup.generated.h"
 
-class UItemSpawnGroupData;
-class AActor;
+
 
 UCLASS(Blueprintable)
 class MAINE_API UTrackedItemSpawnGroup : public UObject, public IPersistentInterface {

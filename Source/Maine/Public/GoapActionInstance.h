@@ -21,3 +21,4 @@ public:
     MAINE_API FGoapActionInstance();
 };
 
+FORCEINLINE uint32 GetTypeHash(const FGoapActionInstance) { return 0; };

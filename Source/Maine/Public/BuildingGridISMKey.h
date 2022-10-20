@@ -17,3 +17,4 @@ public:
     MAINE_API FBuildingGridISMKey();
 };
 
+FORCEINLINE uint32 GetTypeHash(const FBuildingGridISMKey) { return 0; };

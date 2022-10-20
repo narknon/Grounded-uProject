@@ -15,3 +15,4 @@ public:
     MAINE_API FAxisDirectionKey();
 };
 
+FORCEINLINE uint32 GetTypeHash(const FAxisDirectionKey) { return 0; };

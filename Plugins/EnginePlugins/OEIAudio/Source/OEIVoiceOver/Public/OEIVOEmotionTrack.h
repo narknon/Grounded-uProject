@@ -19,5 +19,8 @@ public:
     UOEIVOEmotionTrack();
     
     // Fix for true pure virtual functions not being implemented
+
+
+    virtual FMovieSceneEvalTemplatePtr CreateTemplateForSection(const UMovieSceneSection& InSection) const override;
 };
 

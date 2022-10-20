@@ -17,3 +17,4 @@ public:
     FBuildingGridKey();
 };
 
+FORCEINLINE uint32 GetTypeHash(const FBuildingGridKey) { return 0; };

@@ -14,3 +14,4 @@ public:
     MAINE_API FDynamicMaterialColorKey();
 };
 
+FORCEINLINE uint32 GetTypeHash(const FDynamicMaterialColorKey) { return 0; };
