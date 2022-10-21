@@ -9,3 +9,4 @@ public:
     MAINE_API FGoapActionOwner();
 };
 
+FORCEINLINE uint32 GetTypeHash(const FGoapActionOwner) { return 0; };

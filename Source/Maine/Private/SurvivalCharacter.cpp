@@ -499,7 +499,7 @@ void ASurvivalCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& O
     DOREPLIFETIME(ASurvivalCharacter, ReplicatedMotionEater);
 }
 
-ASurvivalCharacter::ASurvivalCharacter() {
+ASurvivalCharacter::ASurvivalCharacter() : Super(FObjectInitializer::Get().SetDefaultSubobjectClass<UMaineCharMovementComponent>(ACharacter::CharacterMovementComponentName)) {
     this->WaveSpawnID = 0.00f;
     this->CameraDisplayModeLocked = false;
     this->bIsAttacking = false;
@@ -527,7 +527,6 @@ ASurvivalCharacter::ASurvivalCharacter() {
     this->ReactionComponent = CreateDefaultSubobject<UReactionComponent>(TEXT("ReactionComponent"));
     this->TeamComponent = CreateDefaultSubobject<UTeamComponent>(TEXT("TeamComponent"));
     this->StatusEffectComponent = CreateDefaultSubobject<UStatusEffectComponent>(TEXT("StatusEffectComponent"));
-    this->CharMovementComponent = CreateDefaultSubobject<UMaineCharMovementComponent>(TEXT("CharMoveComp"));
     this->CharEquipmentComponent = NULL;
     this->ObsidianIDComp = CreateDefaultSubobject<UObsidianIDComponent>(TEXT("ObsidianIDComponent"));
     this->IncapacitatedInputComponent = NULL;

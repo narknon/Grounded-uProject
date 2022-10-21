@@ -20,3 +20,5 @@ public:
     FSpeakerReference();
 };
 
+FORCEINLINE uint32 GetTypeHash(const FSpeakerReference) { return 0; };
+

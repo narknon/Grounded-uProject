@@ -28,3 +28,4 @@ public:
     MAINE_API FSimulatedInterestState();
 };
 
+FORCEINLINE uint32 GetTypeHash(const FSimulatedInterestState) { return 0; };
