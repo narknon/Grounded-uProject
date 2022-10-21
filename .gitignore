@@ -130,6 +130,8 @@
 
 !/Plugins/PowerIK/Content/*
 
+!/Plugins/EnginePlugins/GameTelemetry/Content**/*
+
 
 # Ignore intermediate folders
 Intermediate/
